@@ -163,10 +163,10 @@
             </objects>
             <point key="canvasLocation" x="-929" y="-234"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Root Navigation Controller-->
         <scene sceneID="EY8-XG-oHi">
             <objects>
-                <navigationController id="YQx-3S-oza" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="RootNavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YQx-3S-oza" customClass="RootNavigationController" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FJ8-gU-qo3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -447,13 +447,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Sell A Book" id="DV3-ny-0SM"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                    <connections>
-                        <outlet property="description" destination="aOF-9r-uYa" id="qgc-HR-CN1"/>
-                        <outlet property="isbn" destination="gcV-e5-KO3" id="jd9-Fj-CNm"/>
-                        <outlet property="nameOfBook" destination="bD0-oN-RMu" id="Ovi-bT-lXr"/>
-                        <outlet property="picker" destination="xrM-qH-Rkd" id="cfl-9c-fkS"/>
-                        <outlet property="price" destination="sI1-GA-ydW" id="uGf-Os-WaI"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pv6-pq-0MU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -637,6 +630,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="FjD-5C-0Se"/>
+        <segue reference="BhB-eT-wvP"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RegistrationViewController : UIViewController <UITextFieldDelegate>
+@interface RegistrationViewController : UIViewController <UITextFieldDelegate, NSURLConnectionDelegate>
 {
     IBOutlet UITextField *name;
     IBOutlet UITextField *email;
