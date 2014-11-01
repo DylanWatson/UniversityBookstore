@@ -13,10 +13,12 @@
     IBOutlet UITextField *name;
     IBOutlet UITextField *email;
     IBOutlet UITextField *password;
+    IBOutlet UITextField *phone;
     IBOutlet UITextField *university;
     IBOutlet UITextField *bankAccountNumber;
     
 }
+-(IBAction)dismiss:(id)sender;
 - (IBAction)submit:(id)sender;
 
 @end

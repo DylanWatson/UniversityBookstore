@@ -16,6 +16,11 @@
     [super viewDidLoad];
 }
 
+-(IBAction)dismiss:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 -(IBAction)submit:(id)sender
 {
     

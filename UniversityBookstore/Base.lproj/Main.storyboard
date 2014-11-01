@@ -45,7 +45,7 @@
             </objects>
             <point key="canvasLocation" x="-2022" y="344"/>
         </scene>
-        <!--Registration-->
+        <!--Registration View Controller-->
         <scene sceneID="U47-wW-wVv">
             <objects>
                 <viewController id="jGf-VJ-S2O" customClass="RegistrationViewController" sceneMemberID="viewController">
@@ -57,94 +57,93 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRO-x4-9c8">
-                                <rect key="frame" x="16" y="92" width="46" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Ex. Keyur Patel" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lhG-fs-Aq4">
-                                <rect key="frame" x="16" y="121" width="187" height="30"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMN-l3-ZS4">
-                                <rect key="frame" x="16" y="159" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="watson123@marshall.edu" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dcw-JE-Ksq">
-                                <rect key="frame" x="16" y="188" width="194" height="30"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zP-hp-fgd">
-                                <rect key="frame" x="16" y="231" width="76" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="At Least 8 Characters" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CPf-vJ-F1f">
-                                <rect key="frame" x="16" y="260" width="161" height="30"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovY-p0-bi9">
-                                <rect key="frame" x="184" y="503" width="49" height="30"/>
-                                <state key="normal" title="Submit">
+                            <view alpha="0.34999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xhy-QQ-PIc">
+                                <rect key="frame" x="0.0" y="129" width="414" height="435"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="93x-Dh-G7k">
+                                        <rect key="frame" x="40" y="15" width="334" height="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="KhmerSangamMN" family="Khmer Sangam MN" pointSize="21"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vRH-b2-261">
+                                        <rect key="frame" x="40" y="85" width="334" height="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="KhmerSangamMN" family="Khmer Sangam MN" pointSize="21"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1bX-nT-Hx0">
+                                        <rect key="frame" x="40" y="155" width="334" height="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="KhmerSangamMN" family="Khmer Sangam MN" pointSize="21"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="University" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gj3-ZU-pdH">
+                                        <rect key="frame" x="40" y="295" width="334" height="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="KhmerSangamMN" family="Khmer Sangam MN" pointSize="21"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Back Account #" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hgd-od-S6p">
+                                        <rect key="frame" x="40" y="365" width="334" height="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="KhmerSangamMN" family="Khmer Sangam MN" pointSize="21"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Phone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ekc-6A-0Fp">
+                                        <rect key="frame" x="40" y="225" width="334" height="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="KhmerSangamMN" family="Khmer Sangam MN" pointSize="21"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uc7-ji-R6M">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <color key="backgroundColor" red="0.9886543753" green="0.93340745079999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.9886543753" green="0.93340745079999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="KhmerSangamMN" family="Khmer Sangam MN" pointSize="21"/>
+                                    <color key="textColor" red="0.02736607848" green="0.22145151800000001" blue="0.36480034719999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textShadowColor" red="0.02736607848" green="0.22145151800000001" blue="0.36480034719999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Registration" id="E0L-tF-Mnj">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="PJF-qL-Uib">
+                                            <color key="tintColor" red="0.02736607848" green="0.22145151800000001" blue="0.36480034719999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="dismiss:" destination="jGf-VJ-S2O" id="Ui1-ML-Vbe"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFl-9t-KZW">
+                                <rect key="frame" x="0.0" y="590" width="414" height="100"/>
+                                <fontDescription key="fontDescription" name="KhmerSangamMN" family="Khmer Sangam MN" pointSize="30"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="jGf-VJ-S2O" eventType="touchDown" id="YB2-QK-TDi"/>
-                                    <segue destination="hJi-2R-lug" kind="show" id="qSw-0s-0fK"/>
+                                    <action selector="submit:" destination="jGf-VJ-S2O" eventType="touchUpInside" id="YRb-0y-Qcw"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="University" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vi-o1-bX6">
-                                <rect key="frame" x="16" y="301" width="76" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Ex. Marshall University" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4W0-W3-rBL">
-                                <rect key="frame" x="16" y="330" width="168" height="30"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bank Account #" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMe-De-wfG">
-                                <rect key="frame" x="16" y="375" width="123" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Ex. 92858293" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jMO-kA-Wub">
-                                <rect key="frame" x="16" y="404" width="110" height="30"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.44305098684210525" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Registration" id="GHc-lb-KTW">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="3hf-OM-5Zf">
-                            <connections>
-                                <segue destination="huZ-BW-Pu5" kind="show" id="7rn-l4-owL"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="bankAccountNumber" destination="jMO-kA-Wub" id="3TG-Kr-Sbe"/>
-                        <outlet property="email" destination="dcw-JE-Ksq" id="WS7-JZ-bza"/>
-                        <outlet property="name" destination="lhG-fs-Aq4" id="7WB-NI-4Ev"/>
-                        <outlet property="password" destination="CPf-vJ-F1f" id="wTP-nC-ak4"/>
-                        <outlet property="university" destination="4W0-W3-rBL" id="Dug-Vv-0Je"/>
+                        <outlet property="bankAccountNumber" destination="hgd-od-S6p" id="poX-lg-WWO"/>
+                        <outlet property="email" destination="vRH-b2-261" id="tEz-ZV-BmD"/>
+                        <outlet property="name" destination="93x-Dh-G7k" id="mwE-ZO-Qy2"/>
+                        <outlet property="password" destination="1bX-nT-Hx0" id="hAz-oo-g9R"/>
+                        <outlet property="phone" destination="ekc-6A-0Fp" id="luM-Ix-Z0U"/>
+                        <outlet property="university" destination="gj3-ZU-pdH" id="eWk-2h-TZo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mn5-Cd-qq6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -163,10 +162,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.96999999999999997" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Gxe-KG-njB">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.94000000000000006" colorSpace="calibratedRGB"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOB-GB-Sb8">
                                 <rect key="frame" x="0.0" y="405" width="414" height="100"/>
                                 <fontDescription key="fontDescription" name="KhmerSangamMN" family="Khmer Sangam MN" pointSize="30"/>
@@ -192,7 +187,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.11372549019607843" green="0.11372549019607843" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.85490196078431369" green="0.32549019607843138" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
@@ -599,9 +594,6 @@
             <point key="canvasLocation" x="2098" y="-927"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="bg.jpg" width="489" height="800"/>
-    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="YEY-zA-zGt"/>
     </inferredMetricsTieBreakers>
