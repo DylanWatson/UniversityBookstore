@@ -14,7 +14,12 @@
 
 @implementation HomeViewController
 
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
+
 - (void)viewDidLoad {
+    [self setNeedsStatusBarAppearanceUpdate];
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }

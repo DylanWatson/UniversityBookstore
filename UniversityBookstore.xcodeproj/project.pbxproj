@@ -16,6 +16,11 @@
 		F113A7CD1A04544500D40F7F /* UniversityBookstoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F113A7CC1A04544500D40F7F /* UniversityBookstoreTests.m */; };
 		F1C12E861A04998000CAB822 /* UploadPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E851A04998000CAB822 /* UploadPicture.m */; };
 		F1C12E8C1A04B75B00CAB822 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1C12E8B1A04B75B00CAB822 /* bg.jpg */; };
+		F1C12E961A04DD3700CAB822 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E8F1A04DD3700CAB822 /* TPKeyboardAvoidingCollectionView.m */; };
+		F1C12E971A04DD3700CAB822 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E911A04DD3700CAB822 /* TPKeyboardAvoidingScrollView.m */; };
+		F1C12E981A04DD3700CAB822 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E931A04DD3700CAB822 /* TPKeyboardAvoidingTableView.m */; };
+		F1C12E991A04DD3700CAB822 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E951A04DD3700CAB822 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		F1C12E9C1A0509F700CAB822 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E9B1A0509F700CAB822 /* LoginViewController.m */; };
 		FC96FBFB1A04B561007ED2A9 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC96FBFA1A04B561007ED2A9 /* RegistrationViewController.m */; };
 		FCD47D861A049E03000D69ED /* BuyBook.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD47D851A049E03000D69ED /* BuyBook.m */; };
 /* End PBXBuildFile section */
@@ -47,6 +52,16 @@
 		F1C12E841A04998000CAB822 /* UploadPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadPicture.h; sourceTree = "<group>"; };
 		F1C12E851A04998000CAB822 /* UploadPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadPicture.m; sourceTree = "<group>"; };
 		F1C12E8B1A04B75B00CAB822 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		F1C12E8E1A04DD3700CAB822 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		F1C12E8F1A04DD3700CAB822 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		F1C12E901A04DD3700CAB822 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		F1C12E911A04DD3700CAB822 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		F1C12E921A04DD3700CAB822 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		F1C12E931A04DD3700CAB822 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		F1C12E941A04DD3700CAB822 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		F1C12E951A04DD3700CAB822 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		F1C12E9A1A0509F700CAB822 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		F1C12E9B1A0509F700CAB822 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		FC96FBF91A04B561007ED2A9 /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegistrationViewController.h; path = ../RegistrationViewController.h; sourceTree = "<group>"; };
 		FC96FBFA1A04B561007ED2A9 /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegistrationViewController.m; path = ../RegistrationViewController.m; sourceTree = "<group>"; };
 		FCD47D841A049E03000D69ED /* BuyBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyBook.h; sourceTree = "<group>"; };
@@ -92,9 +107,12 @@
 		F113A7AF1A04544500D40F7F /* UniversityBookstore */ = {
 			isa = PBXGroup;
 			children = (
+				F1C12E8D1A04DD2C00CAB822 /* TPKeyboard */,
 				F1C12E8B1A04B75B00CAB822 /* bg.jpg */,
 				FC96FBF91A04B561007ED2A9 /* RegistrationViewController.h */,
 				FC96FBFA1A04B561007ED2A9 /* RegistrationViewController.m */,
+				F1C12E9A1A0509F700CAB822 /* LoginViewController.h */,
+				F1C12E9B1A0509F700CAB822 /* LoginViewController.m */,
 				F113A7B41A04544500D40F7F /* AppDelegate.h */,
 				F113A7B51A04544500D40F7F /* AppDelegate.m */,
 				F113A7B71A04544500D40F7F /* HomeViewController.h */,
@@ -135,6 +153,21 @@
 				F113A7CB1A04544500D40F7F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F1C12E8D1A04DD2C00CAB822 /* TPKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F1C12E8E1A04DD3700CAB822 /* TPKeyboardAvoidingCollectionView.h */,
+				F1C12E8F1A04DD3700CAB822 /* TPKeyboardAvoidingCollectionView.m */,
+				F1C12E901A04DD3700CAB822 /* TPKeyboardAvoidingScrollView.h */,
+				F1C12E911A04DD3700CAB822 /* TPKeyboardAvoidingScrollView.m */,
+				F1C12E921A04DD3700CAB822 /* TPKeyboardAvoidingTableView.h */,
+				F1C12E931A04DD3700CAB822 /* TPKeyboardAvoidingTableView.m */,
+				F1C12E941A04DD3700CAB822 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				F1C12E951A04DD3700CAB822 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			name = TPKeyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,11 +272,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F113A7B91A04544500D40F7F /* HomeViewController.m in Sources */,
+				F1C12E971A04DD3700CAB822 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				F113A7B61A04544500D40F7F /* AppDelegate.m in Sources */,
+				F1C12E981A04DD3700CAB822 /* TPKeyboardAvoidingTableView.m in Sources */,
 				FC96FBFB1A04B561007ED2A9 /* RegistrationViewController.m in Sources */,
 				FCD47D861A049E03000D69ED /* BuyBook.m in Sources */,
 				F113A7B31A04544500D40F7F /* main.m in Sources */,
 				F1C12E861A04998000CAB822 /* UploadPicture.m in Sources */,
+				F1C12E961A04DD3700CAB822 /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				F1C12E9C1A0509F700CAB822 /* LoginViewController.m in Sources */,
+				F1C12E991A04DD3700CAB822 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

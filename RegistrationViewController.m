@@ -10,9 +10,20 @@
 
 @implementation RegistrationViewController
 
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
 
 -(void)viewDidLoad
 {
+    name.delegate = self;
+    email.delegate = self;
+    password.delegate = self;
+    phone.delegate = self;
+    university.delegate = self;
+    bankAccountNumber.delegate = self;
+    
+    [self setNeedsStatusBarAppearanceUpdate];
     [super viewDidLoad];
 }
 
@@ -24,6 +35,36 @@
 -(IBAction)submit:(id)sender
 {
     
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if(textField == name)
+    {
+        [name resignFirstResponder];
+        [email becomeFirstResponder];
+    }
+    else if(textField == email)
+    {
+        [password becomeFirstResponder];
+    }
+    else if(textField == password)
+    {
+        [phone becomeFirstResponder];
+    }
+    else if(textField == phone)
+    {
+        [university becomeFirstResponder];
+    }
+    else if(textField == university)
+    {
+        [bankAccountNumber becomeFirstResponder];
+    }
+    else
+    {
+        [bankAccountNumber resignFirstResponder];
+    }
+    return YES;
 }
 
 @end
