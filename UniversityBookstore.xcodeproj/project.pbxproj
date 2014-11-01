@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		F113A7B31A04544500D40F7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F113A7B21A04544500D40F7F /* main.m */; };
 		F113A7B61A04544500D40F7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F113A7B51A04544500D40F7F /* AppDelegate.m */; };
-		F113A7B91A04544500D40F7F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F113A7B81A04544500D40F7F /* ViewController.m */; };
+		F113A7B91A04544500D40F7F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F113A7B81A04544500D40F7F /* HomeViewController.m */; };
 		F113A7BC1A04544500D40F7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F113A7BA1A04544500D40F7F /* Main.storyboard */; };
 		F113A7BE1A04544500D40F7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F113A7BD1A04544500D40F7F /* Images.xcassets */; };
 		F113A7C11A04544500D40F7F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F113A7BF1A04544500D40F7F /* LaunchScreen.xib */; };
 		F113A7CD1A04544500D40F7F /* UniversityBookstoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F113A7CC1A04544500D40F7F /* UniversityBookstoreTests.m */; };
 		F1C12E861A04998000CAB822 /* UploadPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E851A04998000CAB822 /* UploadPicture.m */; };
+		F1C12E8C1A04B75B00CAB822 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1C12E8B1A04B75B00CAB822 /* bg.jpg */; };
 		FCD47D861A049E03000D69ED /* BuyBook.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD47D851A049E03000D69ED /* BuyBook.m */; };
 /* End PBXBuildFile section */
 
@@ -34,8 +35,8 @@
 		F113A7B21A04544500D40F7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F113A7B41A04544500D40F7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F113A7B51A04544500D40F7F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F113A7B71A04544500D40F7F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F113A7B81A04544500D40F7F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F113A7B71A04544500D40F7F /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		F113A7B81A04544500D40F7F /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		F113A7BB1A04544500D40F7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F113A7BD1A04544500D40F7F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F113A7C01A04544500D40F7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -44,6 +45,7 @@
 		F113A7CC1A04544500D40F7F /* UniversityBookstoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UniversityBookstoreTests.m; sourceTree = "<group>"; };
 		F1C12E841A04998000CAB822 /* UploadPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadPicture.h; sourceTree = "<group>"; };
 		F1C12E851A04998000CAB822 /* UploadPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadPicture.m; sourceTree = "<group>"; };
+		F1C12E8B1A04B75B00CAB822 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 		FCD47D841A049E03000D69ED /* BuyBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyBook.h; sourceTree = "<group>"; };
 		FCD47D851A049E03000D69ED /* BuyBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyBook.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,10 +89,11 @@
 		F113A7AF1A04544500D40F7F /* UniversityBookstore */ = {
 			isa = PBXGroup;
 			children = (
+				F1C12E8B1A04B75B00CAB822 /* bg.jpg */,
 				F113A7B41A04544500D40F7F /* AppDelegate.h */,
 				F113A7B51A04544500D40F7F /* AppDelegate.m */,
-				F113A7B71A04544500D40F7F /* ViewController.h */,
-				F113A7B81A04544500D40F7F /* ViewController.m */,
+				F113A7B71A04544500D40F7F /* HomeViewController.h */,
+				F113A7B81A04544500D40F7F /* HomeViewController.m */,
 				F113A7BA1A04544500D40F7F /* Main.storyboard */,
 				FCD47D841A049E03000D69ED /* BuyBook.h */,
 				FCD47D851A049E03000D69ED /* BuyBook.m */,
@@ -211,6 +214,7 @@
 			files = (
 				F113A7BC1A04544500D40F7F /* Main.storyboard in Resources */,
 				F113A7C11A04544500D40F7F /* LaunchScreen.xib in Resources */,
+				F1C12E8C1A04B75B00CAB822 /* bg.jpg in Resources */,
 				F113A7BE1A04544500D40F7F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,7 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F113A7B91A04544500D40F7F /* ViewController.m in Sources */,
+				F113A7B91A04544500D40F7F /* HomeViewController.m in Sources */,
 				F113A7B61A04544500D40F7F /* AppDelegate.m in Sources */,
 				FCD47D861A049E03000D69ED /* BuyBook.m in Sources */,
 				F113A7B31A04544500D40F7F /* main.m in Sources */,

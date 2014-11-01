@@ -1,18 +1,18 @@
 //
-//  ViewController.m
+//  HomeViewController.m
 //  UniversityBookstore
 //
 //  Created by Keyur Patel on 10/31/14.
 //  Copyright (c) 2014 Keyur Patel. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "HomeViewController.h"
 
-@interface ViewController ()
+@interface HomeViewController ()
 
 @end
 
-@implementation ViewController
+@implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
