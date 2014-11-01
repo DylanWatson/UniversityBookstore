@@ -14,6 +14,7 @@
 		F113A7BE1A04544500D40F7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F113A7BD1A04544500D40F7F /* Images.xcassets */; };
 		F113A7C11A04544500D40F7F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F113A7BF1A04544500D40F7F /* LaunchScreen.xib */; };
 		F113A7CD1A04544500D40F7F /* UniversityBookstoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F113A7CC1A04544500D40F7F /* UniversityBookstoreTests.m */; };
+		F1C12E861A04998000CAB822 /* UploadPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E851A04998000CAB822 /* UploadPicture.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		F113A7C61A04544500D40F7F /* UniversityBookstoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniversityBookstoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F113A7CB1A04544500D40F7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F113A7CC1A04544500D40F7F /* UniversityBookstoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UniversityBookstoreTests.m; sourceTree = "<group>"; };
+		F1C12E841A04998000CAB822 /* UploadPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadPicture.h; sourceTree = "<group>"; };
+		F1C12E851A04998000CAB822 /* UploadPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadPicture.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				F113A7B71A04544500D40F7F /* ViewController.h */,
 				F113A7B81A04544500D40F7F /* ViewController.m */,
 				F113A7BA1A04544500D40F7F /* Main.storyboard */,
+				F1C12E841A04998000CAB822 /* UploadPicture.h */,
+				F1C12E851A04998000CAB822 /* UploadPicture.m */,
 				F113A7BD1A04544500D40F7F /* Images.xcassets */,
 				F113A7BF1A04544500D40F7F /* LaunchScreen.xib */,
 				F113A7B01A04544500D40F7F /* Supporting Files */,
@@ -222,6 +227,7 @@
 				F113A7B91A04544500D40F7F /* ViewController.m in Sources */,
 				F113A7B61A04544500D40F7F /* AppDelegate.m in Sources */,
 				F113A7B31A04544500D40F7F /* main.m in Sources */,
+				F1C12E861A04998000CAB822 /* UploadPicture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

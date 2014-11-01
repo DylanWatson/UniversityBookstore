@@ -211,7 +211,7 @@
         <!--View Controller-->
         <scene sceneID="yOr-Pp-Jg9">
             <objects>
-                <viewController id="FgQ-j8-DKl" sceneMemberID="viewController">
+                <viewController id="FgQ-j8-DKl" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UPL-Ps-Fgw"/>
                         <viewControllerLayoutGuide type="bottom" id="2KZ-DQ-Zbj"/>
@@ -491,7 +491,7 @@
         <!--Upload A Picture-->
         <scene sceneID="sUC-j4-Lw3">
             <objects>
-                <viewController title="Upload A Picture" id="GhP-V3-kzd" sceneMemberID="viewController">
+                <viewController title="Upload A Picture" id="GhP-V3-kzd" customClass="UploadPicture" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="o1P-Mp-fRF"/>
                         <viewControllerLayoutGuide type="bottom" id="lcg-MH-4S1"/>
@@ -508,6 +508,9 @@
                                 <state key="normal" title="Take A Photo">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="takePhoto:" destination="GhP-V3-kzd" eventType="touchUpInside" id="LBe-RU-cS5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kf2-9d-gMG">
                                 <rect key="frame" x="108" y="465" width="209" height="30"/>
@@ -529,6 +532,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Upload a Picture" id="Q7H-fy-vJM"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="ImageView" destination="d77-Km-fZF" id="Zy3-T7-unG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N57-in-2JF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
