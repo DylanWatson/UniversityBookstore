@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Registration : UIViewController
+@interface RegistrationViewController : UIViewController
 {
     IBOutlet UITextField *name;
     IBOutlet UITextField *email;
@@ -17,6 +17,6 @@
     IBOutlet UITextField *bankAccountNumber;
     
 }
-- (IBAction)buttonPressed:(id)sender;
+- (IBAction)submit:(id)sender;
 
 @end

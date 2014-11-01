@@ -48,7 +48,7 @@
         <!--Registration-->
         <scene sceneID="U47-wW-wVv">
             <objects>
-                <viewController id="jGf-VJ-S2O" customClass="Registration" sceneMemberID="viewController">
+                <viewController id="jGf-VJ-S2O" customClass="RegistrationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e2x-Ji-R26"/>
                         <viewControllerLayoutGuide type="bottom" id="VFi-PY-zK9"/>
