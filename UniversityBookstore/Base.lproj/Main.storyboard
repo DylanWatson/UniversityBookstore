@@ -48,7 +48,7 @@
         <!--Registration-->
         <scene sceneID="U47-wW-wVv">
             <objects>
-                <viewController id="jGf-VJ-S2O" sceneMemberID="viewController">
+                <viewController id="jGf-VJ-S2O" customClass="Registration" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e2x-Ji-R26"/>
                         <viewControllerLayoutGuide type="bottom" id="VFi-PY-zK9"/>
@@ -99,6 +99,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="buttonPressed:" destination="jGf-VJ-S2O" eventType="touchDown" id="YB2-QK-TDi"/>
                                     <segue destination="hJi-2R-lug" kind="show" id="qSw-0s-0fK"/>
                                 </connections>
                             </button>
@@ -138,6 +139,13 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="bankAccountNumber" destination="jMO-kA-Wub" id="3TG-Kr-Sbe"/>
+                        <outlet property="email" destination="dcw-JE-Ksq" id="WS7-JZ-bza"/>
+                        <outlet property="name" destination="lhG-fs-Aq4" id="7WB-NI-4Ev"/>
+                        <outlet property="password" destination="CPf-vJ-F1f" id="wTP-nC-ak4"/>
+                        <outlet property="university" destination="4W0-W3-rBL" id="Dug-Vv-0Je"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mn5-Cd-qq6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
