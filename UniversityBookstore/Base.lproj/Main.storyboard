@@ -383,7 +383,7 @@
         <!--Sell A Book-->
         <scene sceneID="lnl-P1-d1q">
             <objects>
-                <viewController id="Sou-Cm-ife" sceneMemberID="viewController">
+                <viewController id="Sou-Cm-ife" customClass="SellBookViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DjI-Il-ECw"/>
                         <viewControllerLayoutGuide type="bottom" id="LuW-ql-WFC"/>
@@ -447,6 +447,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Sell A Book" id="DV3-ny-0SM"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="description" destination="aOF-9r-uYa" id="qgc-HR-CN1"/>
+                        <outlet property="isbn" destination="gcV-e5-KO3" id="jd9-Fj-CNm"/>
+                        <outlet property="nameOfBook" destination="bD0-oN-RMu" id="Ovi-bT-lXr"/>
+                        <outlet property="picker" destination="xrM-qH-Rkd" id="cfl-9c-fkS"/>
+                        <outlet property="price" destination="sI1-GA-ydW" id="uGf-Os-WaI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pv6-pq-0MU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
