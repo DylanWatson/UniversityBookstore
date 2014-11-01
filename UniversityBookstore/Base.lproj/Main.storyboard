@@ -230,7 +230,7 @@
         <!--Buy A Book-->
         <scene sceneID="1Vj-r6-I1S">
             <objects>
-                <viewController id="cVt-UE-54P" sceneMemberID="viewController">
+                <viewController id="cVt-UE-54P" customClass="BuyBook" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KrD-4M-vO0"/>
                         <viewControllerLayoutGuide type="bottom" id="QjI-bj-rIO"/>
@@ -254,6 +254,10 @@
                             </label>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xHh-LP-ycZ">
                                 <rect key="frame" x="0.0" y="177" width="414" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="cVt-UE-54P" id="idJ-B6-MEg"/>
+                                    <outlet property="delegate" destination="cVt-UE-54P" id="kpb-BN-Nsg"/>
+                                </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1et-gJ-0iR">
                                 <rect key="frame" x="176" y="400" width="43" height="30"/>
@@ -261,6 +265,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="buttonPressed:" destination="cVt-UE-54P" eventType="touchDown" id="99e-Vo-EPx"/>
                                     <segue destination="FgQ-j8-DKl" kind="show" id="QFD-60-l3s"/>
                                 </connections>
                             </button>
@@ -276,6 +281,7 @@
                     <navigationItem key="navigationItem" title="Buy A Book" id="sRD-UB-DmZ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="picker" destination="xHh-LP-ycZ" id="XOJ-fS-Ujs"/>
                         <outlet property="searchDisplayController" destination="TXB-lF-xAH" id="Wny-Pf-YQ7"/>
                     </connections>
                 </viewController>
@@ -496,7 +502,7 @@
                         <viewControllerLayoutGuide type="top" id="o1P-Mp-fRF"/>
                         <viewControllerLayoutGuide type="bottom" id="lcg-MH-4S1"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="CcF-dQ-UEb">
+                    <view key="view" contentMode="scaleToFill" id="CcF-dQ-UEb" customClass="UINavigationBar">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -540,10 +546,10 @@
             </objects>
             <point key="canvasLocation" x="1570" y="-1013"/>
         </scene>
-        <!--View Controller-->
+        <!--Upload Picture-->
         <scene sceneID="bFB-RC-NOH">
             <objects>
-                <viewController id="0VW-Gq-RRD" sceneMemberID="viewController">
+                <viewController id="0VW-Gq-RRD" customClass="UploadPicture" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="00i-hZ-lrN"/>
                         <viewControllerLayoutGuide type="bottom" id="1WT-2a-0Sh"/>
@@ -584,6 +590,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="BhB-eT-wvP"/>
+        <segue reference="FjD-5C-0Se"/>
     </inferredMetricsTieBreakers>
 </document>
