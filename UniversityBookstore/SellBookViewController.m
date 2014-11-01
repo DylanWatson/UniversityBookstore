@@ -9,19 +9,50 @@
 #import "SellBookViewController.h"
 
 @interface SellBookViewController ()
-@property (strong, nonatomic) NSArray *array;
 
 @end
 
 @implementation SellBookViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    nameOfBook.delegate = self;
+    isbn.delegate = self;
+    description.delegate = self;
+    price.delegate = self;
+    category.delegate = self;
     
-    NSString *data = [[NSArray alloc] initWithObjects:@"Computer Science", @"Mathematics", @"Chemistry", @"Physics", @"Biology", nil];
     
-    self.array = data;
+    
+}
+
+-(IBAction)submit:(id)sender
+{
+    NSURL *url = [NSURL URLWithString:@"http://172.26.5.205:3000/sellbook"];
+    NSData *responseData = [NSMutableData data];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    ///////////////////////////////////////////////////////////
+    //Later we have to check to make sure these are not null///
+    ///////////////////////////////////////////////////////////
+    
+    NSString *email = [defaults objectForKey:@"email"];
+    NSString *password = [defaults objectForKey:@"password"];
+    NSString *session = [defaults objectForKey:@"email"];
+    NSString *bodydata = [NSString stringWithFormat:@"email=%@&password=%@&session_id=%@&title=%@&description=%@&category=%@&isbn=%@&price=%@", email, password, session, nameOfBook.text, isbn.text, description.text, price.text, category.text];
+    [request setHTTPMethod:@"POST"];
+    NSData *req=[NSData dataWithBytes:[bodydata UTF8String] length:[bodydata length]];
+    [request setHTTPBody:req];
+    NSURLResponse *response;
+    NSError *error = nil;
+    responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    NSLog(@"DATA: %@", [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding]);
+    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:&error];
+    //NSString* result = [[NSString alloc] initWithData:req encoding:NSUTF8StringEncoding];
+
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,33 +60,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-#pragma mark Picker Data Source Methods
-
--(NSInteger) numberOfComponentsInPickerView:(UIPickerView *)pickerView
-{
-    return 1;
-}
-
--(NSInteger) pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
-{
-    return [_array count];
-}
-
-#pragma mark Picker Delegate Methods
-
--(NSString *) pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
-{
-    return [_array objectAtIndex:row];
-}
 
 @end
