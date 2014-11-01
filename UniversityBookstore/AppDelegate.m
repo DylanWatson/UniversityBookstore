@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "RootNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,28 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSURL *url = [NSURL URLWithString:@"http://172.26.5.205:3000/is_logged_in"];
+    NSData *responseData = [NSMutableData data];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    NSString *bodydata = [NSString stringWithFormat:@"email=%@&password=%@&session_id=%@", [defaults objectForKey:@"email"], [defaults objectForKey:@"password"], [defaults objectForKey:@"session_id"]];
+    
+    [request setHTTPMethod:@"POST"];
+    NSData *req=[NSData dataWithBytes:[bodydata UTF8String] length:[bodydata length]];
+    [request setHTTPBody:req];
+    NSHTTPURLResponse *response;
+    NSError *error = nil;
+    responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    if([response statusCode] == 200)
+    {
+        UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+        
+        UINavigationController *controller = (UINavigationController*)[mainStoryboard instantiateViewControllerWithIdentifier: @"RootNavigationController"];
+        
+        RootNavigationController *navController = (RootNavigationController *)controller;
+        self.window.rootViewController = navController;
+    }
+    
     return YES;
 }
 

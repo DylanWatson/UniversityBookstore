@@ -19,7 +19,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    NSString *data = [[NSArray alloc] initWithObjects:@"Computer Science", @"Mathematics", @"Chemistry", @"Physics", @"Biology", nil];
+    NSArray *data = [[NSArray alloc] initWithObjects:@"Computer Science", @"Mathematics", @"Chemistry", @"Physics", @"Biology", nil];
+    
+    category.delegate = self;
     
     self.array = data;
 }
@@ -29,15 +31,24 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+    if(textField == category)
+    {
+        [textField resignFirstResponder];
+        [self showPicker:nil];
+        return NO;
+    }
+    return YES;
 }
-*/
+
+- (void) showPicker:(id)sender {
+
+    
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
+    [price becomeFirstResponder];
+}
 
 #pragma mark Picker Data Source Methods
 

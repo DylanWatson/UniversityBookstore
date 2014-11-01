@@ -8,16 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SellBookViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+@interface SellBookViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate, UIActionSheetDelegate>
 {
     IBOutlet UITextField *nameOfBook;
     IBOutlet UITextField *isbn;
-    IBOutlet UITextField *description;
+    IBOutlet UITextView *description;
     IBOutlet UITextField *price;
-    
+    IBOutlet UITextField *category;
 }
-
-@property (weak, nonatomic) IBOutlet UIPickerView *picker;
-- (IBAction)buttonPressed:(id)sender;
 
 @end

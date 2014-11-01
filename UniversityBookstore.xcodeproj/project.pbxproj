@@ -21,6 +21,8 @@
 		F1C12E991A04DD3700CAB822 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E951A04DD3700CAB822 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		F1C12E9C1A0509F700CAB822 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E9B1A0509F700CAB822 /* LoginViewController.m */; };
 		F1C12E9F1A052CAD00CAB822 /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E9E1A052CAD00CAB822 /* RootNavigationController.m */; };
+		F1C12EA21A05434300CAB822 /* InventoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12EA11A05434300CAB822 /* InventoryViewController.m */; };
+		F1C12EA31A05582D00CAB822 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F113A7B81A04544500D40F7F /* HomeViewController.m */; };
 		FC96FBFB1A04B561007ED2A9 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC96FBFA1A04B561007ED2A9 /* RegistrationViewController.m */; };
 		FC96FC041A04B8C0007ED2A9 /* SellBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC96FC031A04B8C0007ED2A9 /* SellBookViewController.m */; };
 		FCD47D861A049E03000D69ED /* BuyBook.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD47D851A049E03000D69ED /* BuyBook.m */; };
@@ -65,6 +67,8 @@
 		F1C12E9B1A0509F700CAB822 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		F1C12E9D1A052CAD00CAB822 /* RootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootNavigationController.h; sourceTree = "<group>"; };
 		F1C12E9E1A052CAD00CAB822 /* RootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootNavigationController.m; sourceTree = "<group>"; };
+		F1C12EA01A05434300CAB822 /* InventoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventoryViewController.h; sourceTree = "<group>"; };
+		F1C12EA11A05434300CAB822 /* InventoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventoryViewController.m; sourceTree = "<group>"; };
 		FC96FBF91A04B561007ED2A9 /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegistrationViewController.h; path = ../RegistrationViewController.h; sourceTree = "<group>"; };
 		FC96FBFA1A04B561007ED2A9 /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegistrationViewController.m; path = ../RegistrationViewController.m; sourceTree = "<group>"; };
 		FC96FC021A04B8C0007ED2A9 /* SellBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SellBookViewController.h; sourceTree = "<group>"; };
@@ -125,6 +129,8 @@
 				F113A7B71A04544500D40F7F /* HomeViewController.h */,
 				F113A7B81A04544500D40F7F /* HomeViewController.m */,
 				F113A7BA1A04544500D40F7F /* Main.storyboard */,
+				F1C12EA01A05434300CAB822 /* InventoryViewController.h */,
+				F1C12EA11A05434300CAB822 /* InventoryViewController.m */,
 				FCD47D841A049E03000D69ED /* BuyBook.h */,
 				FCD47D851A049E03000D69ED /* BuyBook.m */,
 				F1C12E841A04998000CAB822 /* UploadPicture.h */,
@@ -280,8 +286,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1C12EA31A05582D00CAB822 /* HomeViewController.m in Sources */,
 				FC96FC041A04B8C0007ED2A9 /* SellBookViewController.m in Sources */,
 				F1C12E9F1A052CAD00CAB822 /* RootNavigationController.m in Sources */,
+				F1C12EA21A05434300CAB822 /* InventoryViewController.m in Sources */,
 				F1C12E971A04DD3700CAB822 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				F113A7B61A04544500D40F7F /* AppDelegate.m in Sources */,
 				F1C12E981A04DD3700CAB822 /* TPKeyboardAvoidingTableView.m in Sources */,
