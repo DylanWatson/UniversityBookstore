@@ -419,7 +419,7 @@
         <!--Sell A Book-->
         <scene sceneID="lnl-P1-d1q">
             <objects>
-                <viewController id="Sou-Cm-ife" sceneMemberID="viewController">
+                <viewController id="Sou-Cm-ife" customClass="SellBookViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DjI-Il-ECw"/>
                         <viewControllerLayoutGuide type="bottom" id="LuW-ql-WFC"/>
@@ -429,7 +429,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name of the Book" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAF-fI-v5d">
-                                <rect key="frame" x="16" y="81" width="140" height="21"/>
+                                <rect key="frame" x="137" y="81" width="140" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -440,7 +440,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ISBN (10 Digit)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8m-NC-swp">
-                                <rect key="frame" x="16" y="171" width="113" height="21"/>
+                                <rect key="frame" x="151" y="169" width="113" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -457,38 +457,37 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60R-Ub-Enu">
-                                <rect key="frame" x="16" y="338" width="71" height="21"/>
+                                <rect key="frame" x="172" y="346" width="71" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4gC-ab-Tqf">
-                                <rect key="frame" x="16" y="367" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V50-rQ-QYi">
-                                <rect key="frame" x="16" y="437" width="40" height="21"/>
+                                <rect key="frame" x="16" y="535" width="40" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sI1-GA-ydW">
-                                <rect key="frame" x="16" y="466" width="97" height="30"/>
+                                <rect key="frame" x="7" y="564" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gcV-e5-KO3">
-                                <rect key="frame" x="16" y="200" width="113" height="30"/>
+                                <rect key="frame" x="151" y="207" width="113" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xrM-qH-Rkd">
+                                <rect key="frame" x="0.0" y="375" width="414" height="162"/>
+                            </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EN9-Hn-3dh">
-                                <rect key="frame" x="183" y="599" width="49" height="30"/>
+                                <rect key="frame" x="183" y="653" width="49" height="30"/>
                                 <state key="normal" title="Submit">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="buttonPressed:" destination="Sou-Cm-ife" eventType="touchDown" id="QjZ-6F-8RT"/>
                                     <segue destination="GhP-V3-kzd" kind="show" id="P9g-Jb-DoO"/>
                                 </connections>
                             </button>
@@ -497,6 +496,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Sell A Book" id="DV3-ny-0SM"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="description" destination="aOF-9r-uYa" id="qgc-HR-CN1"/>
+                        <outlet property="isbn" destination="gcV-e5-KO3" id="jd9-Fj-CNm"/>
+                        <outlet property="nameOfBook" destination="bD0-oN-RMu" id="Ovi-bT-lXr"/>
+                        <outlet property="picker" destination="xrM-qH-Rkd" id="cfl-9c-fkS"/>
+                        <outlet property="price" destination="sI1-GA-ydW" id="uGf-Os-WaI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pv6-pq-0MU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

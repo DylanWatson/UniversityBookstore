@@ -16,6 +16,7 @@
 		F113A7CD1A04544500D40F7F /* UniversityBookstoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F113A7CC1A04544500D40F7F /* UniversityBookstoreTests.m */; };
 		F1C12E861A04998000CAB822 /* UploadPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E851A04998000CAB822 /* UploadPicture.m */; };
 		FC96FBFB1A04B561007ED2A9 /* Registration.m in Sources */ = {isa = PBXBuildFile; fileRef = FC96FBFA1A04B561007ED2A9 /* Registration.m */; };
+		FC96FC041A04B8C0007ED2A9 /* SellBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC96FC031A04B8C0007ED2A9 /* SellBookViewController.m */; };
 		FCD47D861A049E03000D69ED /* BuyBook.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD47D851A049E03000D69ED /* BuyBook.m */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,8 @@
 		F1C12E851A04998000CAB822 /* UploadPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadPicture.m; sourceTree = "<group>"; };
 		FC96FBF91A04B561007ED2A9 /* Registration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Registration.h; path = ../Registration.h; sourceTree = "<group>"; };
 		FC96FBFA1A04B561007ED2A9 /* Registration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Registration.m; path = ../Registration.m; sourceTree = "<group>"; };
+		FC96FC021A04B8C0007ED2A9 /* SellBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SellBookViewController.h; sourceTree = "<group>"; };
+		FC96FC031A04B8C0007ED2A9 /* SellBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SellBookViewController.m; sourceTree = "<group>"; };
 		FCD47D841A049E03000D69ED /* BuyBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyBook.h; sourceTree = "<group>"; };
 		FCD47D851A049E03000D69ED /* BuyBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyBook.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,6 +97,8 @@
 				FC96FBFA1A04B561007ED2A9 /* Registration.m */,
 				F113A7B41A04544500D40F7F /* AppDelegate.h */,
 				F113A7B51A04544500D40F7F /* AppDelegate.m */,
+				FC96FC021A04B8C0007ED2A9 /* SellBookViewController.h */,
+				FC96FC031A04B8C0007ED2A9 /* SellBookViewController.m */,
 				F113A7B71A04544500D40F7F /* ViewController.h */,
 				F113A7B81A04544500D40F7F /* ViewController.m */,
 				F113A7BA1A04544500D40F7F /* Main.storyboard */,
@@ -234,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC96FC041A04B8C0007ED2A9 /* SellBookViewController.m in Sources */,
 				F113A7B91A04544500D40F7F /* ViewController.m in Sources */,
 				F113A7B61A04544500D40F7F /* AppDelegate.m in Sources */,
 				FC96FBFB1A04B561007ED2A9 /* Registration.m in Sources */,
