@@ -24,4 +24,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)TakePhoto:(id)sender
+{
+    picker =  [[UIImagePickerController alloc]init];
+    picker.delegate = self;
+    [picker setSourceType:(UIImagePickerControllerSourceTypeCamera)];
+    [self presentViewController:picker animated:YES completion:NULL ];
+}
+
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    image = [info objectForKey@"UIImagePickerControllerOriginalImage"];
+    [ImageView setImage:image];
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
+
+-(void)imagePickerControllerDidCancel:(UIImagePickerController *) picker
+{
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
+
 @end
