@@ -23,11 +23,6 @@
     description.delegate = self;
     price.delegate = self;
     category.delegate = self;
-    
-    
-    NSArray *data = [[NSArray alloc] initWithObjects:@"Computer Science", @"Mathematics", @"Chemistry", @"Physics", @"Biology", nil];
-    
-    category.delegate = self;
 }
 
 -(BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
