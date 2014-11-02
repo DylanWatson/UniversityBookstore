@@ -1,29 +1,32 @@
 //
-//  LoginViewController.m
+//  RegistrationViewController.h
 //  UniversityBookstore
 //
-//  Created by Keyur Patel on 11/1/14.
+//  Created by Dylan Watson on 11/1/14.
 //  Copyright (c) 2014 Keyur Patel. All rights reserved.
 //
 
-#import "LoginViewController.h"
+#import "RegistrationViewController.h"
 #import "RootNavigationController.h"
 
+@implementation RegistrationViewController
 
-@interface LoginViewController ()
 
-@end
-
-@implementation LoginViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)viewDidLoad
+{
+    name.delegate = self;
+    email.delegate = self;
+    password.delegate = self;
+    phone.delegate = self;
+    university.delegate = self;
+    bankAccountNumber.delegate = self;
+    
+    [self setNeedsStatusBarAppearanceUpdate];
+    [super viewDidLoad];
 }
 
 -(IBAction)dismiss:(id)sender
@@ -33,10 +36,10 @@
 
 -(IBAction)submit:(id)sender
 {
-    NSURL *url = [NSURL URLWithString:@"http://172.26.5.205:3000/login"];
+    NSURL *url = [NSURL URLWithString:@"http://172.26.5.205:3000/register"];
     NSData *responseData = [NSMutableData data];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-    NSString *bodydata = [NSString stringWithFormat:@"email=%@&password=%@", email.text, password.text];
+    NSString *bodydata = [NSString stringWithFormat:@"name=%@&email=%@&password=%@&phone=%@&university=%@&account=%@", name.text, email.text, password.text, phone.text, university.text, bankAccountNumber.text];
     
     [request setHTTPMethod:@"POST"];
     NSData *req=[NSData dataWithBytes:[bodydata UTF8String] length:[bodydata length]];
@@ -64,25 +67,36 @@
         RootNavigationController *navController = (RootNavigationController *)controller;
         [self presentViewController:navController animated:YES completion:nil];
     }
-    else
-    {
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Invalid Credentials" message:@"Check your credentials and try again" preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction *close = [UIAlertAction actionWithTitle:@"Close" style:UIAlertActionStyleDefault handler:nil];
-        [alert addAction:close];
-        [self presentViewController:alert animated:YES completion:nil];
-    }
 }
+
+
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    if(textField == email)
+    if(textField == name)
     {
-        [email resignFirstResponder];
+        [name resignFirstResponder];
+        [email becomeFirstResponder];
+    }
+    else if(textField == email)
+    {
         [password becomeFirstResponder];
+    }
+    else if(textField == password)
+    {
+        [phone becomeFirstResponder];
+    }
+    else if(textField == phone)
+    {
+        [university becomeFirstResponder];
+    }
+    else if(textField == university)
+    {
+        [bankAccountNumber becomeFirstResponder];
     }
     else
     {
-        [password resignFirstResponder];
+        [bankAccountNumber resignFirstResponder];
     }
     return YES;
 }

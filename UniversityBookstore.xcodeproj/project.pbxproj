@@ -13,7 +13,6 @@
 		F113A7BE1A04544500D40F7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F113A7BD1A04544500D40F7F /* Images.xcassets */; };
 		F113A7C11A04544500D40F7F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F113A7BF1A04544500D40F7F /* LaunchScreen.xib */; };
 		F113A7CD1A04544500D40F7F /* UniversityBookstoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F113A7CC1A04544500D40F7F /* UniversityBookstoreTests.m */; };
-		F1C12E861A04998000CAB822 /* UploadPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E851A04998000CAB822 /* UploadPicture.m */; };
 		F1C12E961A04DD3700CAB822 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E8F1A04DD3700CAB822 /* TPKeyboardAvoidingCollectionView.m */; };
 		F1C12E971A04DD3700CAB822 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E911A04DD3700CAB822 /* TPKeyboardAvoidingScrollView.m */; };
 		F1C12E981A04DD3700CAB822 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E931A04DD3700CAB822 /* TPKeyboardAvoidingTableView.m */; };
@@ -27,6 +26,11 @@
 		F1C12EAF1A058D5D00CAB822 /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12EAC1A058D5D00CAB822 /* UIFont+FontAwesome.m */; };
 		F1C12EB11A05A8A700CAB822 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1C12EB01A05A7BA00CAB822 /* FontAwesome.ttf */; };
 		F1C12EB31A05A8B500CAB822 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C12EB21A05A8B500CAB822 /* CoreGraphics.framework */; };
+		F1C12EBD1A05CB1800CAB822 /* BooksDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12EBC1A05CB1800CAB822 /* BooksDetailViewController.m */; };
+		F1C12EBF1A05FC6C00CAB822 /* splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1C12EBE1A05FC6C00CAB822 /* splash.jpg */; };
+		F1C12EC11A05FCF500CAB822 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = F1C12EC01A05FCF500CAB822 /* placeholder.png */; };
+		F1C12EC41A06008D00CAB822 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12EC31A06008D00CAB822 /* MainViewController.m */; };
+		F1C12EC71A06110500CAB822 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12EC61A06110500CAB822 /* ProfileViewController.m */; };
 		FC6318231A05EBBE00CAC693 /* PTKAddressZip.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6317FA1A05EBBE00CAC693 /* PTKAddressZip.m */; };
 		FC6318241A05EBBE00CAC693 /* PTKCard.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6317FC1A05EBBE00CAC693 /* PTKCard.m */; };
 		FC6318251A05EBBE00CAC693 /* PTKCardCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6317FE1A05EBBE00CAC693 /* PTKCardCVC.m */; };
@@ -120,8 +124,6 @@
 		F113A7C61A04544500D40F7F /* UniversityBookstoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniversityBookstoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F113A7CB1A04544500D40F7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F113A7CC1A04544500D40F7F /* UniversityBookstoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UniversityBookstoreTests.m; sourceTree = "<group>"; };
-		F1C12E841A04998000CAB822 /* UploadPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadPicture.h; sourceTree = "<group>"; };
-		F1C12E851A04998000CAB822 /* UploadPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadPicture.m; sourceTree = "<group>"; };
 		F1C12E8E1A04DD3700CAB822 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
 		F1C12E8F1A04DD3700CAB822 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
 		F1C12E901A04DD3700CAB822 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
@@ -144,6 +146,14 @@
 		F1C12EAC1A058D5D00CAB822 /* UIFont+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+FontAwesome.m"; sourceTree = "<group>"; };
 		F1C12EB01A05A7BA00CAB822 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		F1C12EB21A05A8B500CAB822 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F1C12EBB1A05CB1800CAB822 /* BooksDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooksDetailViewController.h; sourceTree = "<group>"; };
+		F1C12EBC1A05CB1800CAB822 /* BooksDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooksDetailViewController.m; sourceTree = "<group>"; };
+		F1C12EBE1A05FC6C00CAB822 /* splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = splash.jpg; sourceTree = "<group>"; };
+		F1C12EC01A05FCF500CAB822 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		F1C12EC21A06008D00CAB822 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		F1C12EC31A06008D00CAB822 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		F1C12EC51A06110500CAB822 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		F1C12EC61A06110500CAB822 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		FC6317F91A05EBBE00CAC693 /* PTKAddressZip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKAddressZip.h; sourceTree = "<group>"; };
 		FC6317FA1A05EBBE00CAC693 /* PTKAddressZip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKAddressZip.m; sourceTree = "<group>"; };
 		FC6317FB1A05EBBE00CAC693 /* PTKCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKCard.h; sourceTree = "<group>"; };
@@ -186,8 +196,8 @@
 		FC6318221A05EBBE00CAC693 /* textfield@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textfield@2x.png"; sourceTree = "<group>"; };
 		FC6318411A05F09700CAC693 /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
 		FC6318421A05F09700CAC693 /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
-		FC6318441A05F29300CAC693 /* RegistrationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RegistrationViewController.h; path = ../../../.Trash/RegistrationViewController.h; sourceTree = "<group>"; };
-		FC6318451A05F2A300CAC693 /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegistrationViewController.m; path = ../../../.Trash/RegistrationViewController.m; sourceTree = "<group>"; };
+		FC6318441A05F29300CAC693 /* RegistrationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
+		FC6318451A05F2A300CAC693 /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationViewController.m; sourceTree = "<group>"; };
 		FC6318471A05F9CD00CAC693 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		FC63184A1A05FA2200CAC693 /* PKPayment+STPTestKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PKPayment+STPTestKeys.h"; sourceTree = "<group>"; };
 		FC63184B1A05FA2200CAC693 /* PKPayment+STPTestKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PKPayment+STPTestKeys.m"; sourceTree = "<group>"; };
@@ -317,6 +327,8 @@
 		F113A7AF1A04544500D40F7F /* UniversityBookstore */ = {
 			isa = PBXGroup;
 			children = (
+				F1C12EBE1A05FC6C00CAB822 /* splash.jpg */,
+				F1C12EC01A05FCF500CAB822 /* placeholder.png */,
 				F1C12EA61A058D4400CAB822 /* FontAwesome */,
 				F1C12E8D1A04DD2C00CAB822 /* TPKeyboard */,
 				FC6318451A05F2A300CAC693 /* RegistrationViewController.m */,
@@ -344,8 +356,6 @@
 				FCD33EDB1A05A58D002983B3 /* BooksForSaleTableViewController.m */,
 				F1C12EA01A05434300CAB822 /* InventoryViewController.h */,
 				F1C12EA11A05434300CAB822 /* InventoryViewController.m */,
-				F1C12E841A04998000CAB822 /* UploadPicture.h */,
-				F1C12E851A04998000CAB822 /* UploadPicture.m */,
 				F113A7BD1A04544500D40F7F /* Images.xcassets */,
 				F113A7BF1A04544500D40F7F /* LaunchScreen.xib */,
 				F113A7B01A04544500D40F7F /* Supporting Files */,
@@ -353,6 +363,12 @@
 				F1C12E9E1A052CAD00CAB822 /* RootNavigationController.m */,
 				FCD33ED71A0566D5002983B3 /* SearchBooksViewController.h */,
 				FCD33ED81A0566D5002983B3 /* SearchBooksViewController.m */,
+				F1C12EBB1A05CB1800CAB822 /* BooksDetailViewController.h */,
+				F1C12EBC1A05CB1800CAB822 /* BooksDetailViewController.m */,
+				F1C12EC21A06008D00CAB822 /* MainViewController.h */,
+				F1C12EC31A06008D00CAB822 /* MainViewController.m */,
+				F1C12EC51A06110500CAB822 /* ProfileViewController.h */,
+				F1C12EC61A06110500CAB822 /* ProfileViewController.m */,
 			);
 			path = UniversityBookstore;
 			sourceTree = "<group>";
@@ -683,6 +699,7 @@
 				FC63186E1A05FAA800CAC693 /* global.json in Resources */,
 				FC6318321A05EBBE00CAC693 /* diners.png in Resources */,
 				F1C12EB11A05A8A700CAB822 /* FontAwesome.ttf in Resources */,
+				F1C12EC11A05FCF500CAB822 /* placeholder.png in Resources */,
 				FC6318301A05EBBE00CAC693 /* cvc.png in Resources */,
 				FC63182D1A05EBBE00CAC693 /* amex@2x.png in Resources */,
 				FC6318401A05EBBE00CAC693 /* textfield@2x.png in Resources */,
@@ -693,6 +710,7 @@
 				FC63186D1A05FAA800CAC693 /* main.js in Resources */,
 				F113A7C11A04544500D40F7F /* LaunchScreen.xib in Resources */,
 				F113A7BE1A04544500D40F7F /* Images.xcassets in Resources */,
+				F1C12EBF1A05FC6C00CAB822 /* splash.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,6 +740,7 @@
 				FC6318261A05EBBE00CAC693 /* PTKCardExpiry.m in Sources */,
 				FC63182B1A05EBBE00CAC693 /* PTKView.m in Sources */,
 				F1C12EA21A05434300CAB822 /* InventoryViewController.m in Sources */,
+				F1C12EC41A06008D00CAB822 /* MainViewController.m in Sources */,
 				F1C12E971A04DD3700CAB822 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				FC63185C1A05FA2200CAC693 /* STPTestCardStore.m in Sources */,
 				FC6318651A05FA7100CAC693 /* MBProgressHUD.m in Sources */,
@@ -735,9 +754,11 @@
 				FC6318611A05FA2200CAC693 /* STPTestShippingMethodStore.m in Sources */,
 				FC63185D1A05FA2200CAC693 /* STPTestDataTableViewController.m in Sources */,
 				F113A7B31A04544500D40F7F /* main.m in Sources */,
+				F1C12E961A04DD3700CAB822 /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				F1C12EAE1A058D5D00CAB822 /* NSString+FontAwesome.m in Sources */,
+				F1C12EC71A06110500CAB822 /* ProfileViewController.m in Sources */,
 				FC63185F1A05FA2200CAC693 /* STPTestPaymentSummaryViewController.m in Sources */,
 				FCC951AF1A05C5460042A575 /* STPCard.m in Sources */,
-				F1C12E861A04998000CAB822 /* UploadPicture.m in Sources */,
 				FCC951AC1A05C5460042A575 /* Stripe+ApplePay.m in Sources */,
 				FCC951AD1A05C5460042A575 /* STPAPIConnection.m in Sources */,
 				FC63185E1A05FA2200CAC693 /* STPTestPaymentAuthorizationViewController.m in Sources */,
@@ -754,6 +775,7 @@
 				FCC951B01A05C5460042A575 /* STPToken.m in Sources */,
 				FCC951B21A05C5460042A575 /* Stripe.m in Sources */,
 				FCD33EDC1A05A58D002983B3 /* BooksForSaleTableViewController.m in Sources */,
+				F1C12EBD1A05CB1800CAB822 /* BooksDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

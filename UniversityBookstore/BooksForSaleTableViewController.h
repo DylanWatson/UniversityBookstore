@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BooksForSaleTableViewController : UITableViewController
+@interface BooksForSaleTableViewController : UITableViewController <UINavigationControllerDelegate>
 
 @property (strong, nonatomic) NSMutableArray *booksForSell;
 

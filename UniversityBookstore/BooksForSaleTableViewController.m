@@ -7,6 +7,7 @@
 //
 
 #import "BooksForSaleTableViewController.h"
+#import "BooksDetailViewController.h"
 
 @interface BooksForSaleTableViewController ()
 
@@ -62,6 +63,11 @@
     return cell;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"bookDetails" sender:indexPath];
+}
+
 -(void)getAllBooks
 {
     NSUserDefaults *arrayOfBooks = [NSUserDefaults standardUserDefaults];
@@ -69,6 +75,17 @@
     self.booksForSell = [[NSMutableArray alloc] initWithArray:books];
     [self.tableView reloadData];
     NSLog(@"In getAllBooks method.");
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:@"bookDetails"]) {
+        BooksDetailViewController *destination = [segue destinationViewController];
+
+        NSIndexPath *indexPath = (NSIndexPath *)sender;
+        
+        NSDictionary *dictionary = [self.booksForSell objectAtIndex:indexPath.row];
+        destination.dictionary = dictionary;
+    }
 }
 
 /*
