@@ -177,6 +177,7 @@
             </objects>
             <point key="canvasLocation" x="-351" y="-234"/>
         </scene>
+<<<<<<< HEAD
         <!--Books Detail View Controller-->
         <scene sceneID="7rX-OB-tvI">
             <objects>
@@ -273,6 +274,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m7H-ok-ap9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1301" y="-1114"/>
+=======
+        <!--View Controller-->
+        <scene sceneID="d0u-Pi-9gY">
+            <objects>
+                <viewController id="Kcu-Ia-AYb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z1V-N3-xkY"/>
+                        <viewControllerLayoutGuide type="bottom" id="Abg-B5-thz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="96E-S7-qsu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W0M-fS-WuI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1995" y="-1608"/>
+        </scene>
+        <!--Payment View Controller-->
+        <scene sceneID="9Wy-yk-y7o">
+            <objects>
+                <viewController id="gCD-7g-Rv0" customClass="PaymentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zCr-7q-amy"/>
+                        <viewControllerLayoutGuide type="bottom" id="r6y-rI-etv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rnS-5V-F0X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DMV-le-k2U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1399" y="-1468"/>
+>>>>>>> b1aaa6913ee71e8e92ebcc359c1d46a1258f8ebf
         </scene>
         <!--Books For Sale Table View Controller-->
         <scene sceneID="LQI-vC-qtf">
@@ -337,6 +377,15 @@
                                 <connections>
                                     <action selector="search:" destination="cVt-UE-54P" eventType="touchDown" id="06B-YO-ulr"/>
                                     <segue destination="FC0-h7-Ctb" kind="show" id="UnB-qo-FVP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPR-Bh-trT">
+                                <rect key="frame" x="168" y="271" width="30" height="30"/>
+                                <state key="normal" title="Test">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gCD-7g-Rv0" kind="show" id="S08-e8-dRT"/>
                                 </connections>
                             </button>
                         </subviews>
