@@ -29,7 +29,8 @@
 		F1C12EB31A05A8B500CAB822 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C12EB21A05A8B500CAB822 /* CoreGraphics.framework */; };
 		FC96FBFB1A04B561007ED2A9 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC96FBFA1A04B561007ED2A9 /* RegistrationViewController.m */; };
 		FC96FC041A04B8C0007ED2A9 /* SellBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC96FC031A04B8C0007ED2A9 /* SellBookViewController.m */; };
-		FCD47D861A049E03000D69ED /* BuyBook.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD47D851A049E03000D69ED /* BuyBook.m */; };
+		FCD33ED91A0566D5002983B3 /* SearchBooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD33ED81A0566D5002983B3 /* SearchBooksViewController.m */; };
+		FCD33EDC1A05A58D002983B3 /* BooksForSaleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD33EDB1A05A58D002983B3 /* BooksForSaleTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,8 +85,10 @@
 		FC96FBFA1A04B561007ED2A9 /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegistrationViewController.m; path = ../RegistrationViewController.m; sourceTree = "<group>"; };
 		FC96FC021A04B8C0007ED2A9 /* SellBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SellBookViewController.h; sourceTree = "<group>"; };
 		FC96FC031A04B8C0007ED2A9 /* SellBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SellBookViewController.m; sourceTree = "<group>"; };
-		FCD47D841A049E03000D69ED /* BuyBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyBook.h; sourceTree = "<group>"; };
-		FCD47D851A049E03000D69ED /* BuyBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyBook.m; sourceTree = "<group>"; };
+		FCD33ED71A0566D5002983B3 /* SearchBooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBooksViewController.h; sourceTree = "<group>"; };
+		FCD33ED81A0566D5002983B3 /* SearchBooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBooksViewController.m; sourceTree = "<group>"; };
+		FCD33EDA1A05A58C002983B3 /* BooksForSaleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooksForSaleTableViewController.h; sourceTree = "<group>"; };
+		FCD33EDB1A05A58D002983B3 /* BooksForSaleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooksForSaleTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,10 +145,10 @@
 				F113A7B71A04544500D40F7F /* HomeViewController.h */,
 				F113A7B81A04544500D40F7F /* HomeViewController.m */,
 				F113A7BA1A04544500D40F7F /* Main.storyboard */,
+				FCD33EDA1A05A58C002983B3 /* BooksForSaleTableViewController.h */,
+				FCD33EDB1A05A58D002983B3 /* BooksForSaleTableViewController.m */,
 				F1C12EA01A05434300CAB822 /* InventoryViewController.h */,
 				F1C12EA11A05434300CAB822 /* InventoryViewController.m */,
-				FCD47D841A049E03000D69ED /* BuyBook.h */,
-				FCD47D851A049E03000D69ED /* BuyBook.m */,
 				F1C12E841A04998000CAB822 /* UploadPicture.h */,
 				F1C12E851A04998000CAB822 /* UploadPicture.m */,
 				F113A7BD1A04544500D40F7F /* Images.xcassets */,
@@ -153,6 +156,8 @@
 				F113A7B01A04544500D40F7F /* Supporting Files */,
 				F1C12E9D1A052CAD00CAB822 /* RootNavigationController.h */,
 				F1C12E9E1A052CAD00CAB822 /* RootNavigationController.m */,
+				FCD33ED71A0566D5002983B3 /* SearchBooksViewController.h */,
+				FCD33ED81A0566D5002983B3 /* SearchBooksViewController.m */,
 			);
 			path = UniversityBookstore;
 			sourceTree = "<group>";
@@ -317,12 +322,12 @@
 				F1C12EA31A05582D00CAB822 /* HomeViewController.m in Sources */,
 				FC96FC041A04B8C0007ED2A9 /* SellBookViewController.m in Sources */,
 				F1C12E9F1A052CAD00CAB822 /* RootNavigationController.m in Sources */,
+				FCD33ED91A0566D5002983B3 /* SearchBooksViewController.m in Sources */,
 				F1C12EA21A05434300CAB822 /* InventoryViewController.m in Sources */,
 				F1C12E971A04DD3700CAB822 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				F113A7B61A04544500D40F7F /* AppDelegate.m in Sources */,
 				F1C12E981A04DD3700CAB822 /* TPKeyboardAvoidingTableView.m in Sources */,
 				FC96FBFB1A04B561007ED2A9 /* RegistrationViewController.m in Sources */,
-				FCD47D861A049E03000D69ED /* BuyBook.m in Sources */,
 				F113A7B31A04544500D40F7F /* main.m in Sources */,
 				F1C12E861A04998000CAB822 /* UploadPicture.m in Sources */,
 				F1C12E961A04DD3700CAB822 /* TPKeyboardAvoidingCollectionView.m in Sources */,
@@ -330,6 +335,7 @@
 				F1C12EAD1A058D5D00CAB822 /* FAImageView.m in Sources */,
 				F1C12E9C1A0509F700CAB822 /* LoginViewController.m in Sources */,
 				F1C12E991A04DD3700CAB822 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				FCD33EDC1A05A58D002983B3 /* BooksForSaleTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

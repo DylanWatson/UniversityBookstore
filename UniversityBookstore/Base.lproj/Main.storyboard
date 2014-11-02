@@ -180,29 +180,38 @@
             </objects>
             <point key="canvasLocation" x="-351" y="-234"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="yOr-Pp-Jg9">
+        <!--Books For Sale Table View Controller-->
+        <scene sceneID="LQI-vC-qtf">
             <objects>
-                <viewController id="FgQ-j8-DKl" customClass="ViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="UPL-Ps-Fgw"/>
-                        <viewControllerLayoutGuide type="bottom" id="2KZ-DQ-Zbj"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Tpn-yg-lfV">
+                <tableViewController id="FC0-h7-Ctb" customClass="BooksForSaleTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="njR-py-64K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dKk-gj-ml5">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dKk-gj-ml5" id="c7h-Vy-8M4">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="FC0-h7-Ctb" id="Xo2-iW-Oaf"/>
+                            <outlet property="delegate" destination="FC0-h7-Ctb" id="zD6-OR-p5U"/>
+                        </connections>
+                    </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cyT-d0-pTa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Syy-LU-iNS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-667" y="-1144"/>
+            <point key="canvasLocation" x="-785" y="-1202"/>
         </scene>
         <!--Buy A Book-->
         <scene sceneID="1Vj-r6-I1S">
             <objects>
-                <viewController id="cVt-UE-54P" customClass="BuyBook" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pIL-xI-ARM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="cVt-UE-54P" customClass="SearchBooksViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KrD-4M-vO0"/>
                         <viewControllerLayoutGuide type="bottom" id="QjI-bj-rIO"/>
@@ -218,55 +227,31 @@
                                     <outlet property="delegate" destination="cVt-UE-54P" id="UPA-HI-BHe"/>
                                 </connections>
                             </searchBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Search name or ISBN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZM6-8s-Wzd">
-                                <rect key="frame" x="6" y="70" width="166" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Search Name, ISBN, or Category" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZM6-8s-Wzd">
+                                <rect key="frame" x="6" y="70" width="253" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xHh-LP-ycZ">
-                                <rect key="frame" x="0.0" y="177" width="414" height="162"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="cVt-UE-54P" id="idJ-B6-MEg"/>
-                                    <outlet property="delegate" destination="cVt-UE-54P" id="kpb-BN-Nsg"/>
-                                </connections>
-                            </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1et-gJ-0iR">
-                                <rect key="frame" x="176" y="400" width="43" height="30"/>
-                                <state key="normal" title="Select">
+                                <rect key="frame" x="175" y="183" width="48" height="30"/>
+                                <state key="normal" title="Search">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="cVt-UE-54P" eventType="touchDown" id="99e-Vo-EPx"/>
-                                    <segue destination="FgQ-j8-DKl" kind="show" id="QFD-60-l3s"/>
+                                    <action selector="search:" destination="cVt-UE-54P" eventType="touchDown" id="06B-YO-ulr"/>
+                                    <segue destination="FC0-h7-Ctb" kind="show" id="UnB-qo-FVP"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Search by Category" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQS-m5-9h2">
-                                <rect key="frame" x="131" y="148" width="153" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Buy A Book" id="sRD-UB-DmZ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="picker" destination="xHh-LP-ycZ" id="XOJ-fS-Ujs"/>
-                        <outlet property="searchDisplayController" destination="TXB-lF-xAH" id="Wny-Pf-YQ7"/>
+                        <outlet property="searchBar" destination="Fwh-rt-K6G" id="QPE-0P-oGk"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pIL-xI-ARM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="TXB-lF-xAH">
-                    <connections>
-                        <outlet property="delegate" destination="cVt-UE-54P" id="1QZ-Sj-Y5u"/>
-                        <outlet property="searchBar" destination="Fwh-rt-K6G" id="TUM-ZF-6O1"/>
-                        <outlet property="searchContentsController" destination="cVt-UE-54P" id="fyp-9v-b93"/>
-                        <outlet property="searchResultsDataSource" destination="cVt-UE-54P" id="R9q-qk-HIe"/>
-                        <outlet property="searchResultsDelegate" destination="cVt-UE-54P" id="FWA-py-1UP"/>
-                    </connections>
-                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="-175" y="-1144"/>
         </scene>

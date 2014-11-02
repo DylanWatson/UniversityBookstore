@@ -33,8 +33,6 @@
     [cameraButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     
     NSArray *data = [[NSArray alloc] initWithObjects:@"Computer Science", @"Mathematics", @"Chemistry", @"Physics", @"Biology", nil];
-    
-    category.delegate = self;
 }
 
 -(BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
