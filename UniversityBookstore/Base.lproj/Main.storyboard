@@ -429,22 +429,34 @@
                                                 <fontDescription key="fontDescription" name="KhmerSangamMN" family="Khmer Sangam MN" pointSize="21"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                             </textField>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Description" translatesAutoresizingMaskIntoConstraints="NO" id="zrI-D6-2UX">
-                                                <rect key="frame" x="37" y="85" width="334" height="202"/>
-                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Description" translatesAutoresizingMaskIntoConstraints="NO" id="MVs-jt-cQ9">
+                                                <rect key="frame" x="33" y="78" width="341" height="195"/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" name="KhmerSangamMN" family="Khmer Sangam MN" pointSize="21"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="next"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lm8-50-zYc">
-                                        <rect key="frame" x="0.0" y="574" width="414" height="100"/>
+                                        <rect key="frame" x="24" y="568" width="146" height="100"/>
                                         <fontDescription key="fontDescription" name="KhmerSangamMN" family="Khmer Sangam MN" pointSize="30"/>
                                         <state key="normal" title="Sell Book">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="submit:" destination="Sou-Cm-ife" eventType="touchUpInside" id="aAw-OS-Y0K"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKP-bA-uCP">
+                                        <rect key="frame" x="315" y="589" width="71" height="57"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="camera:" destination="Sou-Cm-ife" eventType="touchUpInside" id="knj-vX-HAI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </scrollView>
@@ -454,8 +466,9 @@
                     <navigationItem key="navigationItem" title="Sell A Book" id="DV3-ny-0SM"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="cameraButton" destination="qKP-bA-uCP" id="LNh-kv-6FK"/>
                         <outlet property="category" destination="frP-Zw-gsY" id="VgR-uI-zeJ"/>
-                        <outlet property="description" destination="zrI-D6-2UX" id="ELp-4p-Gsw"/>
+                        <outlet property="description" destination="MVs-jt-cQ9" id="Jrf-df-ILu"/>
                         <outlet property="isbn" destination="4He-hF-Kpl" id="tDg-ex-AZ7"/>
                         <outlet property="nameOfBook" destination="npS-78-bdY" id="pcg-MB-YF5"/>
                         <outlet property="price" destination="lyN-v9-Hfk" id="YO2-V4-tBG"/>
@@ -465,104 +478,10 @@
             </objects>
             <point key="canvasLocation" x="1017" y="-892"/>
         </scene>
-        <!--Upload A Picture-->
-        <scene sceneID="sUC-j4-Lw3">
-            <objects>
-                <viewController title="Upload A Picture" id="GhP-V3-kzd" customClass="UploadPicture" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="o1P-Mp-fRF"/>
-                        <viewControllerLayoutGuide type="bottom" id="lcg-MH-4S1"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="CcF-dQ-UEb" customClass="UINavigationBar">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d77-Km-fZF">
-                                <rect key="frame" x="42" y="64" width="341" height="322"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euL-0t-Wqy">
-                                <rect key="frame" x="162" y="416" width="91" height="30"/>
-                                <state key="normal" title="Take A Photo">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="takePhoto:" destination="GhP-V3-kzd" eventType="touchUpInside" id="LBe-RU-cS5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kf2-9d-gMG">
-                                <rect key="frame" x="108" y="465" width="209" height="30"/>
-                                <state key="normal" title="Choose Photo From Existing...">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIf-fa-clQ">
-                                <rect key="frame" x="183" y="515" width="49" height="30"/>
-                                <state key="normal" title="Submit">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="0VW-Gq-RRD" kind="show" id="Z2O-1S-wot"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Upload a Picture" id="Q7H-fy-vJM"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                    <connections>
-                        <outlet property="ImageView" destination="d77-Km-fZF" id="Zy3-T7-unG"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="N57-in-2JF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1570" y="-1013"/>
-        </scene>
-        <!--Upload Picture-->
-        <scene sceneID="bFB-RC-NOH">
-            <objects>
-                <viewController id="0VW-Gq-RRD" customClass="UploadPicture" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="00i-hZ-lrN"/>
-                        <viewControllerLayoutGuide type="bottom" id="1WT-2a-0Sh"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ir3-Jk-IwN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratuations, you're book is now listed!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOf-MF-ktk">
-                                <rect key="frame" x="46" y="99" width="323" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You will be notified whenever if someone wants your book!" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byD-LG-1kl">
-                                <rect key="frame" x="46" y="135" width="323" height="68"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7S-vr-fXl">
-                                <rect key="frame" x="184" y="353" width="41" height="30"/>
-                                <state key="normal" title="Home">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="LN8-OE-tLo" kind="show" id="FjD-5C-0Se"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hXn-US-Gdu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2098" y="-927"/>
-        </scene>
         <!--Login View Controller-->
         <scene sceneID="wwM-C0-Uyp">
             <objects>
-                <viewController id="KXf-zw-Zwv" userLabel="Login View Controller" customClass="RegistrationViewController" sceneMemberID="viewController">
+                <viewController id="KXf-zw-Zwv" userLabel="Login View Controller" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Gmc-OL-gU2"/>
                         <viewControllerLayoutGuide type="bottom" id="jFf-CL-Puv"/>
@@ -582,7 +501,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="submit:" destination="KXf-zw-Zwv" eventType="touchUpInside" id="Fbi-IG-h8I"/>
+                                            <action selector="submit:" destination="KXf-zw-Zwv" eventType="touchUpInside" id="Ghk-BK-iH2"/>
                                         </connections>
                                     </button>
                                     <view alpha="0.34999999403953552" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gx1-hS-nVH">
@@ -619,7 +538,7 @@
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="XfQ-qH-Xky">
                                             <color key="tintColor" red="0.1843137255" green="0.1529411765" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <action selector="dismiss:" destination="KXf-zw-Zwv" id="Yuu-fJ-v4T"/>
+                                                <action selector="dismiss:" destination="KXf-zw-Zwv" id="TUG-ND-So5"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -633,8 +552,8 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="email" destination="py0-K0-P8u" id="UmP-4M-Av2"/>
-                        <outlet property="name" destination="LCJ-gS-3tL" id="zRf-CZ-ue7"/>
+                        <outlet property="email" destination="LCJ-gS-3tL" id="QJb-py-fvV"/>
+                        <outlet property="password" destination="py0-K0-P8u" id="jE1-hg-afm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MdV-OF-D5y" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -642,7 +561,4 @@
             <point key="canvasLocation" x="-1628" y="480"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="BhB-eT-wvP"/>
-    </inferredMetricsTieBreakers>
 </document>

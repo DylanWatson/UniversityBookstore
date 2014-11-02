@@ -14,7 +14,6 @@
 		F113A7C11A04544500D40F7F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F113A7BF1A04544500D40F7F /* LaunchScreen.xib */; };
 		F113A7CD1A04544500D40F7F /* UniversityBookstoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F113A7CC1A04544500D40F7F /* UniversityBookstoreTests.m */; };
 		F1C12E861A04998000CAB822 /* UploadPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E851A04998000CAB822 /* UploadPicture.m */; };
-		F1C12E8C1A04B75B00CAB822 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1C12E8B1A04B75B00CAB822 /* bg.jpg */; };
 		F1C12E961A04DD3700CAB822 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E8F1A04DD3700CAB822 /* TPKeyboardAvoidingCollectionView.m */; };
 		F1C12E971A04DD3700CAB822 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E911A04DD3700CAB822 /* TPKeyboardAvoidingScrollView.m */; };
 		F1C12E981A04DD3700CAB822 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E931A04DD3700CAB822 /* TPKeyboardAvoidingTableView.m */; };
@@ -23,6 +22,11 @@
 		F1C12E9F1A052CAD00CAB822 /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E9E1A052CAD00CAB822 /* RootNavigationController.m */; };
 		F1C12EA21A05434300CAB822 /* InventoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12EA11A05434300CAB822 /* InventoryViewController.m */; };
 		F1C12EA31A05582D00CAB822 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F113A7B81A04544500D40F7F /* HomeViewController.m */; };
+		F1C12EAD1A058D5D00CAB822 /* FAImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12EA81A058D5D00CAB822 /* FAImageView.m */; };
+		F1C12EAE1A058D5D00CAB822 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12EAA1A058D5D00CAB822 /* NSString+FontAwesome.m */; };
+		F1C12EAF1A058D5D00CAB822 /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12EAC1A058D5D00CAB822 /* UIFont+FontAwesome.m */; };
+		F1C12EB11A05A8A700CAB822 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1C12EB01A05A7BA00CAB822 /* FontAwesome.ttf */; };
+		F1C12EB31A05A8B500CAB822 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C12EB21A05A8B500CAB822 /* CoreGraphics.framework */; };
 		FC96FBFB1A04B561007ED2A9 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC96FBFA1A04B561007ED2A9 /* RegistrationViewController.m */; };
 		FC96FC041A04B8C0007ED2A9 /* SellBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC96FC031A04B8C0007ED2A9 /* SellBookViewController.m */; };
 		FCD47D861A049E03000D69ED /* BuyBook.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD47D851A049E03000D69ED /* BuyBook.m */; };
@@ -54,7 +58,6 @@
 		F113A7CC1A04544500D40F7F /* UniversityBookstoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UniversityBookstoreTests.m; sourceTree = "<group>"; };
 		F1C12E841A04998000CAB822 /* UploadPicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadPicture.h; sourceTree = "<group>"; };
 		F1C12E851A04998000CAB822 /* UploadPicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadPicture.m; sourceTree = "<group>"; };
-		F1C12E8B1A04B75B00CAB822 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 		F1C12E8E1A04DD3700CAB822 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
 		F1C12E8F1A04DD3700CAB822 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
 		F1C12E901A04DD3700CAB822 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
@@ -69,6 +72,14 @@
 		F1C12E9E1A052CAD00CAB822 /* RootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootNavigationController.m; sourceTree = "<group>"; };
 		F1C12EA01A05434300CAB822 /* InventoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventoryViewController.h; sourceTree = "<group>"; };
 		F1C12EA11A05434300CAB822 /* InventoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventoryViewController.m; sourceTree = "<group>"; };
+		F1C12EA71A058D5D00CAB822 /* FAImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAImageView.h; sourceTree = "<group>"; };
+		F1C12EA81A058D5D00CAB822 /* FAImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAImageView.m; sourceTree = "<group>"; };
+		F1C12EA91A058D5D00CAB822 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		F1C12EAA1A058D5D00CAB822 /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		F1C12EAB1A058D5D00CAB822 /* UIFont+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+FontAwesome.h"; sourceTree = "<group>"; };
+		F1C12EAC1A058D5D00CAB822 /* UIFont+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+FontAwesome.m"; sourceTree = "<group>"; };
+		F1C12EB01A05A7BA00CAB822 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		F1C12EB21A05A8B500CAB822 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		FC96FBF91A04B561007ED2A9 /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegistrationViewController.h; path = ../RegistrationViewController.h; sourceTree = "<group>"; };
 		FC96FBFA1A04B561007ED2A9 /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegistrationViewController.m; path = ../RegistrationViewController.m; sourceTree = "<group>"; };
 		FC96FC021A04B8C0007ED2A9 /* SellBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SellBookViewController.h; sourceTree = "<group>"; };
@@ -82,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1C12EB31A05A8B500CAB822 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +110,7 @@
 		F113A7A41A04544500D40F7F = {
 			isa = PBXGroup;
 			children = (
+				F1C12EB21A05A8B500CAB822 /* CoreGraphics.framework */,
 				F113A7AF1A04544500D40F7F /* UniversityBookstore */,
 				F113A7C91A04544500D40F7F /* UniversityBookstoreTests */,
 				F113A7AE1A04544500D40F7F /* Products */,
@@ -116,8 +129,8 @@
 		F113A7AF1A04544500D40F7F /* UniversityBookstore */ = {
 			isa = PBXGroup;
 			children = (
+				F1C12EA61A058D4400CAB822 /* FontAwesome */,
 				F1C12E8D1A04DD2C00CAB822 /* TPKeyboard */,
-				F1C12E8B1A04B75B00CAB822 /* bg.jpg */,
 				FC96FBF91A04B561007ED2A9 /* RegistrationViewController.h */,
 				FC96FBFA1A04B561007ED2A9 /* RegistrationViewController.m */,
 				F1C12E9A1A0509F700CAB822 /* LoginViewController.h */,
@@ -183,6 +196,20 @@
 				F1C12E951A04DD3700CAB822 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
 			);
 			name = TPKeyboard;
+			sourceTree = "<group>";
+		};
+		F1C12EA61A058D4400CAB822 /* FontAwesome */ = {
+			isa = PBXGroup;
+			children = (
+				F1C12EB01A05A7BA00CAB822 /* FontAwesome.ttf */,
+				F1C12EA71A058D5D00CAB822 /* FAImageView.h */,
+				F1C12EA81A058D5D00CAB822 /* FAImageView.m */,
+				F1C12EA91A058D5D00CAB822 /* NSString+FontAwesome.h */,
+				F1C12EAA1A058D5D00CAB822 /* NSString+FontAwesome.m */,
+				F1C12EAB1A058D5D00CAB822 /* UIFont+FontAwesome.h */,
+				F1C12EAC1A058D5D00CAB822 /* UIFont+FontAwesome.m */,
+			);
+			name = FontAwesome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +292,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1C12EB11A05A8A700CAB822 /* FontAwesome.ttf in Resources */,
 				F113A7BC1A04544500D40F7F /* Main.storyboard in Resources */,
 				F113A7C11A04544500D40F7F /* LaunchScreen.xib in Resources */,
-				F1C12E8C1A04B75B00CAB822 /* bg.jpg in Resources */,
 				F113A7BE1A04544500D40F7F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1C12EAF1A058D5D00CAB822 /* UIFont+FontAwesome.m in Sources */,
 				F1C12EA31A05582D00CAB822 /* HomeViewController.m in Sources */,
 				FC96FC041A04B8C0007ED2A9 /* SellBookViewController.m in Sources */,
 				F1C12E9F1A052CAD00CAB822 /* RootNavigationController.m in Sources */,
@@ -298,6 +326,8 @@
 				F113A7B31A04544500D40F7F /* main.m in Sources */,
 				F1C12E861A04998000CAB822 /* UploadPicture.m in Sources */,
 				F1C12E961A04DD3700CAB822 /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				F1C12EAE1A058D5D00CAB822 /* NSString+FontAwesome.m in Sources */,
+				F1C12EAD1A058D5D00CAB822 /* FAImageView.m in Sources */,
 				F1C12E9C1A0509F700CAB822 /* LoginViewController.m in Sources */,
 				F1C12E991A04DD3700CAB822 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 			);

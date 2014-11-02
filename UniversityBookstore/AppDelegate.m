@@ -29,7 +29,8 @@
     NSHTTPURLResponse *response;
     NSError *error = nil;
     responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
-    if([response statusCode] == 200)
+    NSString *str = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+    if([str isEqualToString:@"Success"])
     {
         UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
         
