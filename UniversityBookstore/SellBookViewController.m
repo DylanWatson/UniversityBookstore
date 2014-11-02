@@ -18,6 +18,10 @@
 @implementation SellBookViewController
 @synthesize image;
 
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

@@ -18,7 +18,6 @@
 		F1C12E991A04DD3700CAB822 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E951A04DD3700CAB822 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		F1C12E9C1A0509F700CAB822 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E9B1A0509F700CAB822 /* LoginViewController.m */; };
 		F1C12E9F1A052CAD00CAB822 /* RootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E9E1A052CAD00CAB822 /* RootNavigationController.m */; };
-		F1C12EA21A05434300CAB822 /* InventoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12EA11A05434300CAB822 /* InventoryViewController.m */; };
 		F1C12EA31A05582D00CAB822 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F113A7B81A04544500D40F7F /* HomeViewController.m */; };
 		F1C12EAD1A058D5D00CAB822 /* FAImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12EA81A058D5D00CAB822 /* FAImageView.m */; };
 		F1C12EAE1A058D5D00CAB822 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12EAA1A058D5D00CAB822 /* NSString+FontAwesome.m */; };
@@ -27,10 +26,12 @@
 		F1C12EB31A05A8B500CAB822 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C12EB21A05A8B500CAB822 /* CoreGraphics.framework */; };
 		F1C12EBD1A05CB1800CAB822 /* BooksDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12EBC1A05CB1800CAB822 /* BooksDetailViewController.m */; };
 		F1C12EBF1A05FC6C00CAB822 /* splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1C12EBE1A05FC6C00CAB822 /* splash.jpg */; };
-		F1C12EC11A05FCF500CAB822 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = F1C12EC01A05FCF500CAB822 /* placeholder.png */; };
 		F1C12EC41A06008D00CAB822 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12EC31A06008D00CAB822 /* MainViewController.m */; };
 		F1C12EC71A06110500CAB822 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12EC61A06110500CAB822 /* ProfileViewController.m */; };
-		FC96FBFB1A04B561007ED2A9 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC96FBFA1A04B561007ED2A9 /* RegistrationViewController.m */; };
+		F1C12ECB1A062A2400CAB822 /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1C12ECA1A062A2400CAB822 /* placeholder.jpg */; };
+		F1C12ECC1A062F6100CAB822 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6318451A05F2A300CAC693 /* RegistrationViewController.m */; };
+		F1C12ECF1A0632A100CAB822 /* InventoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12ECE1A0632A100CAB822 /* InventoryTableViewController.m */; };
+		F1C12ED21A063EB400CAB822 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12ED11A063EB400CAB822 /* NSData+Base64.m */; };
 		FC6318231A05EBBE00CAC693 /* PTKAddressZip.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6317FA1A05EBBE00CAC693 /* PTKAddressZip.m */; };
 		FC6318241A05EBBE00CAC693 /* PTKCard.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6317FC1A05EBBE00CAC693 /* PTKCard.m */; };
 		FC6318251A05EBBE00CAC693 /* PTKCardCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6317FE1A05EBBE00CAC693 /* PTKCardCVC.m */; };
@@ -96,7 +97,6 @@
 		FCC951B61A05C6740042A575 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC951B41A05C5CA0042A575 /* Foundation.framework */; };
 		FCC951B81A05C68C0042A575 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC951B71A05C68C0042A575 /* Security.framework */; };
 		FCC951BA1A05C6A70042A575 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC951B91A05C6A70042A575 /* PassKit.framework */; };
-		FCD33ED91A0566D5002983B3 /* SearchBooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD33ED81A0566D5002983B3 /* SearchBooksViewController.m */; };
 		FCD33EDC1A05A58D002983B3 /* BooksForSaleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD33EDB1A05A58D002983B3 /* BooksForSaleTableViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -136,8 +136,6 @@
 		F1C12E9B1A0509F700CAB822 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		F1C12E9D1A052CAD00CAB822 /* RootNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootNavigationController.h; sourceTree = "<group>"; };
 		F1C12E9E1A052CAD00CAB822 /* RootNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootNavigationController.m; sourceTree = "<group>"; };
-		F1C12EA01A05434300CAB822 /* InventoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventoryViewController.h; sourceTree = "<group>"; };
-		F1C12EA11A05434300CAB822 /* InventoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventoryViewController.m; sourceTree = "<group>"; };
 		F1C12EA71A058D5D00CAB822 /* FAImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAImageView.h; sourceTree = "<group>"; };
 		F1C12EA81A058D5D00CAB822 /* FAImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAImageView.m; sourceTree = "<group>"; };
 		F1C12EA91A058D5D00CAB822 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
@@ -149,13 +147,15 @@
 		F1C12EBB1A05CB1800CAB822 /* BooksDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooksDetailViewController.h; sourceTree = "<group>"; };
 		F1C12EBC1A05CB1800CAB822 /* BooksDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooksDetailViewController.m; sourceTree = "<group>"; };
 		F1C12EBE1A05FC6C00CAB822 /* splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = splash.jpg; sourceTree = "<group>"; };
-		F1C12EC01A05FCF500CAB822 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		F1C12EC21A06008D00CAB822 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		F1C12EC31A06008D00CAB822 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		F1C12EC51A06110500CAB822 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		F1C12EC61A06110500CAB822 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
-		FC96FBF91A04B561007ED2A9 /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegistrationViewController.h; path = ../RegistrationViewController.h; sourceTree = "<group>"; };
-		FC96FBFA1A04B561007ED2A9 /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegistrationViewController.m; path = ../RegistrationViewController.m; sourceTree = "<group>"; };
+		F1C12ECA1A062A2400CAB822 /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpg; sourceTree = "<group>"; };
+		F1C12ECD1A0632A100CAB822 /* InventoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventoryTableViewController.h; sourceTree = "<group>"; };
+		F1C12ECE1A0632A100CAB822 /* InventoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventoryTableViewController.m; sourceTree = "<group>"; };
+		F1C12ED01A063EB400CAB822 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		F1C12ED11A063EB400CAB822 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		FC6317F91A05EBBE00CAC693 /* PTKAddressZip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKAddressZip.h; sourceTree = "<group>"; };
 		FC6317FA1A05EBBE00CAC693 /* PTKAddressZip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKAddressZip.m; sourceTree = "<group>"; };
 		FC6317FB1A05EBBE00CAC693 /* PTKCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKCard.h; sourceTree = "<group>"; };
@@ -224,8 +224,6 @@
 		FC63186C1A05FAA800CAC693 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		FC6318701A05FB7700CAC693 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		FC6318711A05FB7700CAC693 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
-		FC6318731A05FEBA00CAC693 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "../../stripe-ios/Example/StripeExample/ViewController.h"; sourceTree = "<group>"; };
-		FC6318741A05FEBA00CAC693 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "../../stripe-ios/Example/StripeExample/ViewController.m"; sourceTree = "<group>"; };
 		FC6318871A06082C00CAC693 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		FC6318891A06084200CAC693 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		FC63188B1A06084D00CAC693 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -257,8 +255,6 @@
 		FCC951B41A05C5CA0042A575 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FCC951B71A05C68C0042A575 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		FCC951B91A05C6A70042A575 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
-		FCD33ED71A0566D5002983B3 /* SearchBooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBooksViewController.h; sourceTree = "<group>"; };
-		FCD33ED81A0566D5002983B3 /* SearchBooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBooksViewController.m; sourceTree = "<group>"; };
 		FCD33EDA1A05A58C002983B3 /* BooksForSaleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooksForSaleTableViewController.h; sourceTree = "<group>"; };
 		FCD33EDB1A05A58D002983B3 /* BooksForSaleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooksForSaleTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -329,8 +325,8 @@
 		F113A7AF1A04544500D40F7F /* UniversityBookstore */ = {
 			isa = PBXGroup;
 			children = (
+				F1C12ECA1A062A2400CAB822 /* placeholder.jpg */,
 				F1C12EBE1A05FC6C00CAB822 /* splash.jpg */,
-				F1C12EC01A05FCF500CAB822 /* placeholder.png */,
 				F1C12EA61A058D4400CAB822 /* FontAwesome */,
 				F1C12E8D1A04DD2C00CAB822 /* TPKeyboard */,
 				FC6318451A05F2A300CAC693 /* RegistrationViewController.m */,
@@ -338,14 +334,14 @@
 				FC6318441A05F29300CAC693 /* RegistrationViewController.h */,
 				F1C12E9B1A0509F700CAB822 /* LoginViewController.m */,
 				F113A7B41A04544500D40F7F /* AppDelegate.h */,
-				FC6318731A05FEBA00CAC693 /* ViewController.h */,
-				FC6318741A05FEBA00CAC693 /* ViewController.m */,
 				F113A7B51A04544500D40F7F /* AppDelegate.m */,
 				FC96FC021A04B8C0007ED2A9 /* SellBookViewController.h */,
 				FC6318411A05F09700CAC693 /* PaymentViewController.h */,
 				FC6318421A05F09700CAC693 /* PaymentViewController.m */,
 				FC6318701A05FB7700CAC693 /* Constants.h */,
 				FC6318711A05FB7700CAC693 /* Constants.m */,
+				F1C12ED01A063EB400CAB822 /* NSData+Base64.h */,
+				F1C12ED11A063EB400CAB822 /* NSData+Base64.m */,
 				FC6318661A05FAA700CAC693 /* Parse */,
 				FC6318621A05FA7100CAC693 /* MBProgressHUD */,
 				FC6318491A05FA2200CAC693 /* ApplePayStubs */,
@@ -356,15 +352,13 @@
 				F113A7BA1A04544500D40F7F /* Main.storyboard */,
 				FCD33EDA1A05A58C002983B3 /* BooksForSaleTableViewController.h */,
 				FCD33EDB1A05A58D002983B3 /* BooksForSaleTableViewController.m */,
-				F1C12EA01A05434300CAB822 /* InventoryViewController.h */,
-				F1C12EA11A05434300CAB822 /* InventoryViewController.m */,
+				F1C12ECD1A0632A100CAB822 /* InventoryTableViewController.h */,
+				F1C12ECE1A0632A100CAB822 /* InventoryTableViewController.m */,
 				F113A7BD1A04544500D40F7F /* Images.xcassets */,
 				F113A7BF1A04544500D40F7F /* LaunchScreen.xib */,
 				F113A7B01A04544500D40F7F /* Supporting Files */,
 				F1C12E9D1A052CAD00CAB822 /* RootNavigationController.h */,
 				F1C12E9E1A052CAD00CAB822 /* RootNavigationController.m */,
-				FCD33ED71A0566D5002983B3 /* SearchBooksViewController.h */,
-				FCD33ED81A0566D5002983B3 /* SearchBooksViewController.m */,
 				F1C12EBB1A05CB1800CAB822 /* BooksDetailViewController.h */,
 				F1C12EBC1A05CB1800CAB822 /* BooksDetailViewController.m */,
 				F1C12EC21A06008D00CAB822 /* MainViewController.h */,
@@ -683,6 +677,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC63182F1A05EBBE00CAC693 /* cvc-amex@2x.png in Resources */,
+				F1C12ECB1A062A2400CAB822 /* placeholder.jpg in Resources */,
 				FC63183F1A05EBBE00CAC693 /* textfield.png in Resources */,
 				FC63183E1A05EBBE00CAC693 /* gradient@2x.png in Resources */,
 				FC6318311A05EBBE00CAC693 /* cvc@2x.png in Resources */,
@@ -701,7 +696,6 @@
 				FC63186E1A05FAA800CAC693 /* global.json in Resources */,
 				FC6318321A05EBBE00CAC693 /* diners.png in Resources */,
 				F1C12EB11A05A8A700CAB822 /* FontAwesome.ttf in Resources */,
-				F1C12EC11A05FCF500CAB822 /* placeholder.png in Resources */,
 				FC6318301A05EBBE00CAC693 /* cvc.png in Resources */,
 				FC63182D1A05EBBE00CAC693 /* amex@2x.png in Resources */,
 				FC6318401A05EBBE00CAC693 /* textfield@2x.png in Resources */,
@@ -730,6 +724,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1C12ECC1A062F6100CAB822 /* RegistrationViewController.m in Sources */,
 				FC6318231A05EBBE00CAC693 /* PTKAddressZip.m in Sources */,
 				FCC951AE1A05C5460042A575 /* STPBankAccount.m in Sources */,
 				F1C12EAF1A058D5D00CAB822 /* UIFont+FontAwesome.m in Sources */,
@@ -738,10 +733,8 @@
 				FC6318241A05EBBE00CAC693 /* PTKCard.m in Sources */,
 				FC63182A1A05EBBE00CAC693 /* PTKUSAddressZip.m in Sources */,
 				F1C12E9F1A052CAD00CAB822 /* RootNavigationController.m in Sources */,
-				FCD33ED91A0566D5002983B3 /* SearchBooksViewController.m in Sources */,
 				FC6318261A05EBBE00CAC693 /* PTKCardExpiry.m in Sources */,
 				FC63182B1A05EBBE00CAC693 /* PTKView.m in Sources */,
-				F1C12EA21A05434300CAB822 /* InventoryViewController.m in Sources */,
 				F1C12EC41A06008D00CAB822 /* MainViewController.m in Sources */,
 				F1C12E971A04DD3700CAB822 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				FC63185C1A05FA2200CAC693 /* STPTestCardStore.m in Sources */,
@@ -755,8 +748,8 @@
 				FC6318271A05EBBE00CAC693 /* PTKCardNumber.m in Sources */,
 				FC6318611A05FA2200CAC693 /* STPTestShippingMethodStore.m in Sources */,
 				FC63185D1A05FA2200CAC693 /* STPTestDataTableViewController.m in Sources */,
+				F1C12ED21A063EB400CAB822 /* NSData+Base64.m in Sources */,
 				F113A7B31A04544500D40F7F /* main.m in Sources */,
-				F1C12E961A04DD3700CAB822 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				F1C12EAE1A058D5D00CAB822 /* NSString+FontAwesome.m in Sources */,
 				F1C12EC71A06110500CAB822 /* ProfileViewController.m in Sources */,
 				FC63185F1A05FA2200CAC693 /* STPTestPaymentSummaryViewController.m in Sources */,
@@ -772,6 +765,7 @@
 				F1C12E9C1A0509F700CAB822 /* LoginViewController.m in Sources */,
 				FC6318251A05EBBE00CAC693 /* PTKCardCVC.m in Sources */,
 				FC6318291A05EBBE00CAC693 /* PTKTextField.m in Sources */,
+				F1C12ECF1A0632A100CAB822 /* InventoryTableViewController.m in Sources */,
 				F1C12E991A04DD3700CAB822 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				FCC951B01A05C5460042A575 /* STPToken.m in Sources */,
 				FCC951B21A05C5460042A575 /* Stripe.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "BooksDetailViewController.h"
+#import "NSData+Base64.h"
 
 @interface BooksDetailViewController ()
 
@@ -23,17 +24,19 @@
     _category.text = [_dictionary objectForKey:@"category"];
     _isbn.text = [_dictionary objectForKey:@"isbn"];
     
-    NSURL *url = [NSURL URLWithString:[_dictionary objectForKey:@"image"]];
-    NSData *imageData = [NSData dataWithContentsOfURL:url];
-    UIImage *ret = [UIImage imageWithData:imageData];
+    //Creating the data from your base64String
+    NSData *data = [[NSData alloc] initWithData:[NSData dataFromBase64String:[_dictionary objectForKey:@"image"]]];
     
-    if(ret != nil)
+    //Now data is decoded. You can convert them to UIImage
+    UIImage *image = [UIImage imageWithData:data];
+    
+    if(image != nil)
     {
-        _imageView = [[UIImageView alloc] initWithImage:ret];
+        _imageView = [[UIImageView alloc] initWithImage:image];
     }
     else
     {
-        _imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"placeholder.png"]];
+        _imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"placeholder.jpg"]];
     }
     
     [super viewDidLoad];

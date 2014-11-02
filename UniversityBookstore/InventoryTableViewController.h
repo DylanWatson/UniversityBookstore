@@ -1,5 +1,5 @@
 //
-//  ProfileViewController.h
+//  InventoryTableViewController.h
 //  UniversityBookstore
 //
 //  Created by Keyur Patel on 11/2/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProfileViewController : UIViewController
-
--(IBAction)signout:(id)sender;
+@interface InventoryTableViewController : UITableViewController
 
 @end

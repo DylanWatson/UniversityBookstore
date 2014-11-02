@@ -1,24 +1,48 @@
 //
-//  BooksForSaleTableViewController.m
+//  InventoryTableViewController.m
 //  UniversityBookstore
 //
-//  Created by Dylan Watson on 11/1/14.
+//  Created by Keyur Patel on 11/2/14.
 //  Copyright (c) 2014 Keyur Patel. All rights reserved.
 //
 
-#import "BooksForSaleTableViewController.h"
+#import "InventoryTableViewController.h"
 #import "BooksDetailViewController.h"
 
-@interface BooksForSaleTableViewController ()
-
+@interface InventoryTableViewController ()
+@property(nonatomic, strong) NSMutableArray *items;
 @end
 
-@implementation BooksForSaleTableViewController
+@implementation InventoryTableViewController
+@synthesize items;
 
 - (void)viewDidLoad {
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     [super viewDidLoad];
-    [self.tableView reloadData];
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSURL *url = [NSURL URLWithString:@"http://172.26.5.205:3000/inventory"];
+    NSData *responseData = [NSMutableData data];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    NSString *bodydata = [NSString stringWithFormat:@"email=%@&password=%@&session_id=%@", [defaults objectForKey:@"email"], [defaults objectForKey:@"password"], [defaults objectForKey:@"session_id"]];
+    
+    [request setHTTPMethod:@"POST"];
+    NSData *req=[NSData dataWithBytes:[bodydata UTF8String] length:[bodydata length]];
+    [request setHTTPBody:req];
+    NSHTTPURLResponse *response;
+    NSError *error = nil;
+    responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    NSString *result = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+    NSArray *json = [NSJSONSerialization JSONObjectWithData:responseData options:0 error:&error];
+    if([result containsString:@"200"] && [json count] > 0)
+    {
+        items = [[NSMutableArray alloc] initWithArray:json];
+    }
+    else
+    {
+        NSDictionary *dictionary = [[NSDictionary alloc] initWithObjectsAndKeys:@"No items available in inventory", @"title", nil];
+        items = [[NSMutableArray alloc] initWithObjects:dictionary, nil];
+    }
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -41,7 +65,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return [self.booksForSell count];
+    return [items count];
 }
 
 
@@ -53,15 +77,16 @@
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
-    NSDictionary *tempDictionary = [self.booksForSell objectAtIndex:indexPath.row];
+    NSDictionary *tempDictionary = [self.items objectAtIndex:indexPath.row];
     
     NSLog(@"%@", [tempDictionary objectForKey:@"title"]);
     
     cell.textLabel.text = [tempDictionary objectForKey:@"title"];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"Price: %@", [tempDictionary objectForKey:@"prize"]];
-
+    
     return cell;
 }
+
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -71,10 +96,10 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if([segue.identifier isEqualToString:@"bookDetails"]) {
         BooksDetailViewController *destination = [segue destinationViewController];
-
+        
         NSIndexPath *indexPath = (NSIndexPath *)sender;
         
-        NSDictionary *dictionary = [self.booksForSell objectAtIndex:indexPath.row];
+        NSDictionary *dictionary = [items objectAtIndex:indexPath.row];
         destination.dictionary = dictionary;
     }
 }
