@@ -29,6 +29,17 @@
 		F1C12EB31A05A8B500CAB822 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1C12EB21A05A8B500CAB822 /* CoreGraphics.framework */; };
 		FC96FBFB1A04B561007ED2A9 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC96FBFA1A04B561007ED2A9 /* RegistrationViewController.m */; };
 		FC96FC041A04B8C0007ED2A9 /* SellBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC96FC031A04B8C0007ED2A9 /* SellBookViewController.m */; };
+		FCC951AC1A05C5460042A575 /* Stripe+ApplePay.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC9519A1A05C5460042A575 /* Stripe+ApplePay.m */; };
+		FCC951AD1A05C5460042A575 /* STPAPIConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC9519C1A05C5460042A575 /* STPAPIConnection.m */; };
+		FCC951AE1A05C5460042A575 /* STPBankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC9519E1A05C5460042A575 /* STPBankAccount.m */; };
+		FCC951AF1A05C5460042A575 /* STPCard.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC951A01A05C5460042A575 /* STPCard.m */; };
+		FCC951B01A05C5460042A575 /* STPToken.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC951A31A05C5460042A575 /* STPToken.m */; };
+		FCC951B11A05C5460042A575 /* STPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC951A51A05C5460042A575 /* STPUtils.m */; };
+		FCC951B21A05C5460042A575 /* Stripe.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC951A71A05C5460042A575 /* Stripe.m */; };
+		FCC951B31A05C5460042A575 /* StripeError.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC951A91A05C5460042A575 /* StripeError.m */; };
+		FCC951B61A05C6740042A575 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC951B41A05C5CA0042A575 /* Foundation.framework */; };
+		FCC951B81A05C68C0042A575 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC951B71A05C68C0042A575 /* Security.framework */; };
+		FCC951BA1A05C6A70042A575 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC951B91A05C6A70042A575 /* PassKit.framework */; };
 		FCD33ED91A0566D5002983B3 /* SearchBooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD33ED81A0566D5002983B3 /* SearchBooksViewController.m */; };
 		FCD33EDC1A05A58D002983B3 /* BooksForSaleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD33EDB1A05A58D002983B3 /* BooksForSaleTableViewController.m */; };
 /* End PBXBuildFile section */
@@ -85,6 +96,27 @@
 		FC96FBFA1A04B561007ED2A9 /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegistrationViewController.m; path = ../RegistrationViewController.m; sourceTree = "<group>"; };
 		FC96FC021A04B8C0007ED2A9 /* SellBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SellBookViewController.h; sourceTree = "<group>"; };
 		FC96FC031A04B8C0007ED2A9 /* SellBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SellBookViewController.m; sourceTree = "<group>"; };
+		FCC951991A05C5460042A575 /* Stripe+ApplePay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Stripe+ApplePay.h"; sourceTree = "<group>"; };
+		FCC9519A1A05C5460042A575 /* Stripe+ApplePay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Stripe+ApplePay.m"; sourceTree = "<group>"; };
+		FCC9519B1A05C5460042A575 /* STPAPIConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPAPIConnection.h; sourceTree = "<group>"; };
+		FCC9519C1A05C5460042A575 /* STPAPIConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPAPIConnection.m; sourceTree = "<group>"; };
+		FCC9519D1A05C5460042A575 /* STPBankAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPBankAccount.h; sourceTree = "<group>"; };
+		FCC9519E1A05C5460042A575 /* STPBankAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPBankAccount.m; sourceTree = "<group>"; };
+		FCC9519F1A05C5460042A575 /* STPCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPCard.h; sourceTree = "<group>"; };
+		FCC951A01A05C5460042A575 /* STPCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPCard.m; sourceTree = "<group>"; };
+		FCC951A11A05C5460042A575 /* STPFormEncodeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPFormEncodeProtocol.h; sourceTree = "<group>"; };
+		FCC951A21A05C5460042A575 /* STPToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPToken.h; sourceTree = "<group>"; };
+		FCC951A31A05C5460042A575 /* STPToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPToken.m; sourceTree = "<group>"; };
+		FCC951A41A05C5460042A575 /* STPUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPUtils.h; sourceTree = "<group>"; };
+		FCC951A51A05C5460042A575 /* STPUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPUtils.m; sourceTree = "<group>"; };
+		FCC951A61A05C5460042A575 /* Stripe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stripe.h; sourceTree = "<group>"; };
+		FCC951A71A05C5460042A575 /* Stripe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stripe.m; sourceTree = "<group>"; };
+		FCC951A81A05C5460042A575 /* StripeError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StripeError.h; sourceTree = "<group>"; };
+		FCC951A91A05C5460042A575 /* StripeError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StripeError.m; sourceTree = "<group>"; };
+		FCC951AB1A05C5460042A575 /* Stripe-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Stripe-Prefix.pch"; sourceTree = "<group>"; };
+		FCC951B41A05C5CA0042A575 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FCC951B71A05C68C0042A575 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FCC951B91A05C6A70042A575 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		FCD33ED71A0566D5002983B3 /* SearchBooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBooksViewController.h; sourceTree = "<group>"; };
 		FCD33ED81A0566D5002983B3 /* SearchBooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBooksViewController.m; sourceTree = "<group>"; };
 		FCD33EDA1A05A58C002983B3 /* BooksForSaleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooksForSaleTableViewController.h; sourceTree = "<group>"; };
@@ -96,6 +128,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCC951BA1A05C6A70042A575 /* PassKit.framework in Frameworks */,
+				FCC951B81A05C68C0042A575 /* Security.framework in Frameworks */,
+				FCC951B61A05C6740042A575 /* Foundation.framework in Frameworks */,
 				F1C12EB31A05A8B500CAB822 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,6 +148,10 @@
 		F113A7A41A04544500D40F7F = {
 			isa = PBXGroup;
 			children = (
+				FCC951B91A05C6A70042A575 /* PassKit.framework */,
+				FCC951B71A05C68C0042A575 /* Security.framework */,
+				FCC951B41A05C5CA0042A575 /* Foundation.framework */,
+				FCC951971A05C5460042A575 /* Stripe */,
 				F1C12EB21A05A8B500CAB822 /* CoreGraphics.framework */,
 				F113A7AF1A04544500D40F7F /* UniversityBookstore */,
 				F113A7C91A04544500D40F7F /* UniversityBookstoreTests */,
@@ -217,6 +256,48 @@
 			name = FontAwesome;
 			sourceTree = "<group>";
 		};
+		FCC951971A05C5460042A575 /* Stripe */ = {
+			isa = PBXGroup;
+			children = (
+				FCC951981A05C5460042A575 /* ApplePay */,
+				FCC9519B1A05C5460042A575 /* STPAPIConnection.h */,
+				FCC9519C1A05C5460042A575 /* STPAPIConnection.m */,
+				FCC9519D1A05C5460042A575 /* STPBankAccount.h */,
+				FCC9519E1A05C5460042A575 /* STPBankAccount.m */,
+				FCC9519F1A05C5460042A575 /* STPCard.h */,
+				FCC951A01A05C5460042A575 /* STPCard.m */,
+				FCC951A11A05C5460042A575 /* STPFormEncodeProtocol.h */,
+				FCC951A21A05C5460042A575 /* STPToken.h */,
+				FCC951A31A05C5460042A575 /* STPToken.m */,
+				FCC951A41A05C5460042A575 /* STPUtils.h */,
+				FCC951A51A05C5460042A575 /* STPUtils.m */,
+				FCC951A61A05C5460042A575 /* Stripe.h */,
+				FCC951A71A05C5460042A575 /* Stripe.m */,
+				FCC951A81A05C5460042A575 /* StripeError.h */,
+				FCC951A91A05C5460042A575 /* StripeError.m */,
+				FCC951AA1A05C5460042A575 /* Supporting Files */,
+			);
+			name = Stripe;
+			path = UniversityBookstore/Stripe;
+			sourceTree = "<group>";
+		};
+		FCC951981A05C5460042A575 /* ApplePay */ = {
+			isa = PBXGroup;
+			children = (
+				FCC951991A05C5460042A575 /* Stripe+ApplePay.h */,
+				FCC9519A1A05C5460042A575 /* Stripe+ApplePay.m */,
+			);
+			path = ApplePay;
+			sourceTree = "<group>";
+		};
+		FCC951AA1A05C5460042A575 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FCC951AB1A05C5460042A575 /* Stripe-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -318,6 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCC951AE1A05C5460042A575 /* STPBankAccount.m in Sources */,
 				F1C12EAF1A058D5D00CAB822 /* UIFont+FontAwesome.m in Sources */,
 				F1C12EA31A05582D00CAB822 /* HomeViewController.m in Sources */,
 				FC96FC041A04B8C0007ED2A9 /* SellBookViewController.m in Sources */,
@@ -325,16 +407,23 @@
 				FCD33ED91A0566D5002983B3 /* SearchBooksViewController.m in Sources */,
 				F1C12EA21A05434300CAB822 /* InventoryViewController.m in Sources */,
 				F1C12E971A04DD3700CAB822 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				FCC951B31A05C5460042A575 /* StripeError.m in Sources */,
 				F113A7B61A04544500D40F7F /* AppDelegate.m in Sources */,
 				F1C12E981A04DD3700CAB822 /* TPKeyboardAvoidingTableView.m in Sources */,
+				FCC951B11A05C5460042A575 /* STPUtils.m in Sources */,
 				FC96FBFB1A04B561007ED2A9 /* RegistrationViewController.m in Sources */,
 				F113A7B31A04544500D40F7F /* main.m in Sources */,
+				FCC951AF1A05C5460042A575 /* STPCard.m in Sources */,
 				F1C12E861A04998000CAB822 /* UploadPicture.m in Sources */,
+				FCC951AC1A05C5460042A575 /* Stripe+ApplePay.m in Sources */,
+				FCC951AD1A05C5460042A575 /* STPAPIConnection.m in Sources */,
 				F1C12E961A04DD3700CAB822 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				F1C12EAE1A058D5D00CAB822 /* NSString+FontAwesome.m in Sources */,
 				F1C12EAD1A058D5D00CAB822 /* FAImageView.m in Sources */,
 				F1C12E9C1A0509F700CAB822 /* LoginViewController.m in Sources */,
 				F1C12E991A04DD3700CAB822 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				FCC951B01A05C5460042A575 /* STPToken.m in Sources */,
+				FCC951B21A05C5460042A575 /* Stripe.m in Sources */,
 				FCD33EDC1A05A58D002983B3 /* BooksForSaleTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
