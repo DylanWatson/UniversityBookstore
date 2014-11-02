@@ -78,6 +78,14 @@
         
     }
     //NSString* result = [[NSString alloc] initWithData:req encoding:NSUTF8StringEncoding];
+    UIAlertView *message =
+    [[UIAlertView alloc] initWithTitle:@"You're book is now on the marketplace!\n"
+                               message:[NSString stringWithFormat:@"When someone purchases your book, you will be notified with the buyer's contact information."]
+                              delegate:nil
+                     cancelButtonTitle:NSLocalizedString(@"OK", @"OK")
+                     otherButtonTitles:nil];
+    
+    [message show];
 }
 
 - (IBAction)camera:(id)sender
