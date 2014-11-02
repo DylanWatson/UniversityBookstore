@@ -58,7 +58,20 @@
 		FC63183F1A05EBBE00CAC693 /* textfield.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6318211A05EBBE00CAC693 /* textfield.png */; };
 		FC6318401A05EBBE00CAC693 /* textfield@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6318221A05EBBE00CAC693 /* textfield@2x.png */; };
 		FC6318431A05F09700CAC693 /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6318421A05F09700CAC693 /* PaymentViewController.m */; };
-		FC96FBFB1A04B561007ED2A9 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC96FBFA1A04B561007ED2A9 /* RegistrationViewController.m */; };
+		FC6318461A05F2A300CAC693 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6318451A05F2A300CAC693 /* RegistrationViewController.m */; };
+		FC6318481A05F9CD00CAC693 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6318471A05F9CD00CAC693 /* Parse.framework */; };
+		FC63185A1A05FA2200CAC693 /* PKPayment+STPTestKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = FC63184B1A05FA2200CAC693 /* PKPayment+STPTestKeys.m */; };
+		FC63185B1A05FA2200CAC693 /* STPTestAddressStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FC63184D1A05FA2200CAC693 /* STPTestAddressStore.m */; };
+		FC63185C1A05FA2200CAC693 /* STPTestCardStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FC63184F1A05FA2200CAC693 /* STPTestCardStore.m */; };
+		FC63185D1A05FA2200CAC693 /* STPTestDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6318521A05FA2200CAC693 /* STPTestDataTableViewController.m */; };
+		FC63185E1A05FA2200CAC693 /* STPTestPaymentAuthorizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6318541A05FA2200CAC693 /* STPTestPaymentAuthorizationViewController.m */; };
+		FC63185F1A05FA2200CAC693 /* STPTestPaymentSummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6318561A05FA2200CAC693 /* STPTestPaymentSummaryViewController.m */; };
+		FC6318601A05FA2200CAC693 /* STPTestPaymentSummaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC6318571A05FA2200CAC693 /* STPTestPaymentSummaryViewController.xib */; };
+		FC6318611A05FA2200CAC693 /* STPTestShippingMethodStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6318591A05FA2200CAC693 /* STPTestShippingMethodStore.m */; };
+		FC6318651A05FA7100CAC693 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6318641A05FA7100CAC693 /* MBProgressHUD.m */; };
+		FC63186D1A05FAA800CAC693 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = FC6318681A05FAA700CAC693 /* main.js */; };
+		FC63186E1A05FAA800CAC693 /* global.json in Resources */ = {isa = PBXBuildFile; fileRef = FC63186A1A05FAA700CAC693 /* global.json */; };
+		FC63186F1A05FAA800CAC693 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = FC63186C1A05FAA800CAC693 /* index.html */; };
 		FC96FC041A04B8C0007ED2A9 /* SellBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC96FC031A04B8C0007ED2A9 /* SellBookViewController.m */; };
 		FCC951AC1A05C5460042A575 /* Stripe+ApplePay.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC9519A1A05C5460042A575 /* Stripe+ApplePay.m */; };
 		FCC951AD1A05C5460042A575 /* STPAPIConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC9519C1A05C5460042A575 /* STPAPIConnection.m */; };
@@ -165,8 +178,30 @@
 		FC6318221A05EBBE00CAC693 /* textfield@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textfield@2x.png"; sourceTree = "<group>"; };
 		FC6318411A05F09700CAC693 /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
 		FC6318421A05F09700CAC693 /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
-		FC96FBF91A04B561007ED2A9 /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegistrationViewController.h; path = ../RegistrationViewController.h; sourceTree = "<group>"; };
-		FC96FBFA1A04B561007ED2A9 /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegistrationViewController.m; path = ../RegistrationViewController.m; sourceTree = "<group>"; };
+		FC6318441A05F29300CAC693 /* RegistrationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RegistrationViewController.h; path = ../../../.Trash/RegistrationViewController.h; sourceTree = "<group>"; };
+		FC6318451A05F2A300CAC693 /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegistrationViewController.m; path = ../../../.Trash/RegistrationViewController.m; sourceTree = "<group>"; };
+		FC6318471A05F9CD00CAC693 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		FC63184A1A05FA2200CAC693 /* PKPayment+STPTestKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PKPayment+STPTestKeys.h"; sourceTree = "<group>"; };
+		FC63184B1A05FA2200CAC693 /* PKPayment+STPTestKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PKPayment+STPTestKeys.m"; sourceTree = "<group>"; };
+		FC63184C1A05FA2200CAC693 /* STPTestAddressStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPTestAddressStore.h; sourceTree = "<group>"; };
+		FC63184D1A05FA2200CAC693 /* STPTestAddressStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPTestAddressStore.m; sourceTree = "<group>"; };
+		FC63184E1A05FA2200CAC693 /* STPTestCardStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPTestCardStore.h; sourceTree = "<group>"; };
+		FC63184F1A05FA2200CAC693 /* STPTestCardStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPTestCardStore.m; sourceTree = "<group>"; };
+		FC6318501A05FA2200CAC693 /* STPTestDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPTestDataStore.h; sourceTree = "<group>"; };
+		FC6318511A05FA2200CAC693 /* STPTestDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPTestDataTableViewController.h; sourceTree = "<group>"; };
+		FC6318521A05FA2200CAC693 /* STPTestDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPTestDataTableViewController.m; sourceTree = "<group>"; };
+		FC6318531A05FA2200CAC693 /* STPTestPaymentAuthorizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPTestPaymentAuthorizationViewController.h; sourceTree = "<group>"; };
+		FC6318541A05FA2200CAC693 /* STPTestPaymentAuthorizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPTestPaymentAuthorizationViewController.m; sourceTree = "<group>"; };
+		FC6318551A05FA2200CAC693 /* STPTestPaymentSummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPTestPaymentSummaryViewController.h; sourceTree = "<group>"; };
+		FC6318561A05FA2200CAC693 /* STPTestPaymentSummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPTestPaymentSummaryViewController.m; sourceTree = "<group>"; };
+		FC6318571A05FA2200CAC693 /* STPTestPaymentSummaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STPTestPaymentSummaryViewController.xib; sourceTree = "<group>"; };
+		FC6318581A05FA2200CAC693 /* STPTestShippingMethodStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPTestShippingMethodStore.h; sourceTree = "<group>"; };
+		FC6318591A05FA2200CAC693 /* STPTestShippingMethodStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPTestShippingMethodStore.m; sourceTree = "<group>"; };
+		FC6318631A05FA7100CAC693 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		FC6318641A05FA7100CAC693 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		FC6318681A05FAA700CAC693 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		FC63186A1A05FAA700CAC693 /* global.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = global.json; sourceTree = "<group>"; };
+		FC63186C1A05FAA800CAC693 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		FC96FC021A04B8C0007ED2A9 /* SellBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SellBookViewController.h; sourceTree = "<group>"; };
 		FC96FC031A04B8C0007ED2A9 /* SellBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SellBookViewController.m; sourceTree = "<group>"; };
 		FCC951991A05C5460042A575 /* Stripe+ApplePay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Stripe+ApplePay.h"; sourceTree = "<group>"; };
@@ -205,6 +240,7 @@
 				FCC951B81A05C68C0042A575 /* Security.framework in Frameworks */,
 				FCC951B61A05C6740042A575 /* Foundation.framework in Frameworks */,
 				F1C12EB31A05A8B500CAB822 /* CoreGraphics.framework in Frameworks */,
+				FC6318481A05F9CD00CAC693 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,15 +283,19 @@
 			children = (
 				F1C12EA61A058D4400CAB822 /* FontAwesome */,
 				F1C12E8D1A04DD2C00CAB822 /* TPKeyboard */,
-				FC96FBF91A04B561007ED2A9 /* RegistrationViewController.h */,
-				FC96FBFA1A04B561007ED2A9 /* RegistrationViewController.m */,
+				FC6318451A05F2A300CAC693 /* RegistrationViewController.m */,
 				F1C12E9A1A0509F700CAB822 /* LoginViewController.h */,
+				FC6318441A05F29300CAC693 /* RegistrationViewController.h */,
 				F1C12E9B1A0509F700CAB822 /* LoginViewController.m */,
 				F113A7B41A04544500D40F7F /* AppDelegate.h */,
 				F113A7B51A04544500D40F7F /* AppDelegate.m */,
 				FC96FC021A04B8C0007ED2A9 /* SellBookViewController.h */,
 				FC6318411A05F09700CAC693 /* PaymentViewController.h */,
 				FC6318421A05F09700CAC693 /* PaymentViewController.m */,
+				FC6318661A05FAA700CAC693 /* Parse */,
+				FC6318621A05FA7100CAC693 /* MBProgressHUD */,
+				FC6318491A05FA2200CAC693 /* ApplePayStubs */,
+				FC6318471A05F9CD00CAC693 /* Parse.framework */,
 				FC96FC031A04B8C0007ED2A9 /* SellBookViewController.m */,
 				F113A7B71A04544500D40F7F /* HomeViewController.h */,
 				F113A7B81A04544500D40F7F /* HomeViewController.m */,
@@ -396,6 +436,72 @@
 			path = Cards;
 			sourceTree = "<group>";
 		};
+		FC6318491A05FA2200CAC693 /* ApplePayStubs */ = {
+			isa = PBXGroup;
+			children = (
+				FC63184A1A05FA2200CAC693 /* PKPayment+STPTestKeys.h */,
+				FC63184B1A05FA2200CAC693 /* PKPayment+STPTestKeys.m */,
+				FC63184C1A05FA2200CAC693 /* STPTestAddressStore.h */,
+				FC63184D1A05FA2200CAC693 /* STPTestAddressStore.m */,
+				FC63184E1A05FA2200CAC693 /* STPTestCardStore.h */,
+				FC63184F1A05FA2200CAC693 /* STPTestCardStore.m */,
+				FC6318501A05FA2200CAC693 /* STPTestDataStore.h */,
+				FC6318511A05FA2200CAC693 /* STPTestDataTableViewController.h */,
+				FC6318521A05FA2200CAC693 /* STPTestDataTableViewController.m */,
+				FC6318531A05FA2200CAC693 /* STPTestPaymentAuthorizationViewController.h */,
+				FC6318541A05FA2200CAC693 /* STPTestPaymentAuthorizationViewController.m */,
+				FC6318551A05FA2200CAC693 /* STPTestPaymentSummaryViewController.h */,
+				FC6318561A05FA2200CAC693 /* STPTestPaymentSummaryViewController.m */,
+				FC6318571A05FA2200CAC693 /* STPTestPaymentSummaryViewController.xib */,
+				FC6318581A05FA2200CAC693 /* STPTestShippingMethodStore.h */,
+				FC6318591A05FA2200CAC693 /* STPTestShippingMethodStore.m */,
+			);
+			path = ApplePayStubs;
+			sourceTree = "<group>";
+		};
+		FC6318621A05FA7100CAC693 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				FC6318631A05FA7100CAC693 /* MBProgressHUD.h */,
+				FC6318641A05FA7100CAC693 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		FC6318661A05FAA700CAC693 /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				FC6318671A05FAA700CAC693 /* cloud */,
+				FC6318691A05FAA700CAC693 /* config */,
+				FC63186B1A05FAA700CAC693 /* public */,
+			);
+			path = Parse;
+			sourceTree = "<group>";
+		};
+		FC6318671A05FAA700CAC693 /* cloud */ = {
+			isa = PBXGroup;
+			children = (
+				FC6318681A05FAA700CAC693 /* main.js */,
+			);
+			path = cloud;
+			sourceTree = "<group>";
+		};
+		FC6318691A05FAA700CAC693 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				FC63186A1A05FAA700CAC693 /* global.json */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		FC63186B1A05FAA700CAC693 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				FC63186C1A05FAA800CAC693 /* index.html */,
+			);
+			path = public;
+			sourceTree = "<group>";
+		};
 		FCC951971A05C5460042A575 /* Stripe */ = {
 			isa = PBXGroup;
 			children = (
@@ -528,19 +634,23 @@
 				FC6318351A05EBBE00CAC693 /* discover@2x.png in Resources */,
 				FC6318391A05EBBE00CAC693 /* mastercard@2x.png in Resources */,
 				FC6318371A05EBBE00CAC693 /* jcb@2x.png in Resources */,
+				FC6318601A05FA2200CAC693 /* STPTestPaymentSummaryViewController.xib in Resources */,
 				FC6318381A05EBBE00CAC693 /* mastercard.png in Resources */,
 				FC63183D1A05EBBE00CAC693 /* visa@2x.png in Resources */,
 				FC6318361A05EBBE00CAC693 /* jcb.png in Resources */,
 				FC63183B1A05EBBE00CAC693 /* placeholder@2x.png in Resources */,
 				FC63183A1A05EBBE00CAC693 /* placeholder.png in Resources */,
+				FC63186E1A05FAA800CAC693 /* global.json in Resources */,
 				FC6318321A05EBBE00CAC693 /* diners.png in Resources */,
 				F1C12EB11A05A8A700CAB822 /* FontAwesome.ttf in Resources */,
 				FC6318301A05EBBE00CAC693 /* cvc.png in Resources */,
 				FC63182D1A05EBBE00CAC693 /* amex@2x.png in Resources */,
 				FC6318401A05EBBE00CAC693 /* textfield@2x.png in Resources */,
 				FC63182C1A05EBBE00CAC693 /* amex.png in Resources */,
+				FC63186F1A05FAA800CAC693 /* index.html in Resources */,
 				FC63183C1A05EBBE00CAC693 /* visa.png in Resources */,
 				F113A7BC1A04544500D40F7F /* Main.storyboard in Resources */,
+				FC63186D1A05FAA800CAC693 /* main.js in Resources */,
 				F113A7C11A04544500D40F7F /* LaunchScreen.xib in Resources */,
 				F113A7BE1A04544500D40F7F /* Images.xcassets in Resources */,
 			);
@@ -570,23 +680,31 @@
 				F1C12E9F1A052CAD00CAB822 /* RootNavigationController.m in Sources */,
 				FCD33ED91A0566D5002983B3 /* SearchBooksViewController.m in Sources */,
 				FC6318261A05EBBE00CAC693 /* PTKCardExpiry.m in Sources */,
+				FC6318461A05F2A300CAC693 /* RegistrationViewController.m in Sources */,
 				FC63182B1A05EBBE00CAC693 /* PTKView.m in Sources */,
 				F1C12EA21A05434300CAB822 /* InventoryViewController.m in Sources */,
 				F1C12E971A04DD3700CAB822 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				FC63185C1A05FA2200CAC693 /* STPTestCardStore.m in Sources */,
+				FC6318651A05FA7100CAC693 /* MBProgressHUD.m in Sources */,
 				FC6318281A05EBBE00CAC693 /* PTKComponent.m in Sources */,
+				FC63185A1A05FA2200CAC693 /* PKPayment+STPTestKeys.m in Sources */,
 				FCC951B31A05C5460042A575 /* StripeError.m in Sources */,
 				F113A7B61A04544500D40F7F /* AppDelegate.m in Sources */,
 				F1C12E981A04DD3700CAB822 /* TPKeyboardAvoidingTableView.m in Sources */,
 				FCC951B11A05C5460042A575 /* STPUtils.m in Sources */,
 				FC6318271A05EBBE00CAC693 /* PTKCardNumber.m in Sources */,
-				FC96FBFB1A04B561007ED2A9 /* RegistrationViewController.m in Sources */,
+				FC6318611A05FA2200CAC693 /* STPTestShippingMethodStore.m in Sources */,
+				FC63185D1A05FA2200CAC693 /* STPTestDataTableViewController.m in Sources */,
 				F113A7B31A04544500D40F7F /* main.m in Sources */,
+				FC63185F1A05FA2200CAC693 /* STPTestPaymentSummaryViewController.m in Sources */,
 				FCC951AF1A05C5460042A575 /* STPCard.m in Sources */,
 				F1C12E861A04998000CAB822 /* UploadPicture.m in Sources */,
 				FCC951AC1A05C5460042A575 /* Stripe+ApplePay.m in Sources */,
 				FCC951AD1A05C5460042A575 /* STPAPIConnection.m in Sources */,
+				FC63185E1A05FA2200CAC693 /* STPTestPaymentAuthorizationViewController.m in Sources */,
 				F1C12E961A04DD3700CAB822 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				F1C12EAE1A058D5D00CAB822 /* NSString+FontAwesome.m in Sources */,
+				FC63185B1A05FA2200CAC693 /* STPTestAddressStore.m in Sources */,
 				FC6318431A05F09700CAC693 /* PaymentViewController.m in Sources */,
 				F1C12EAD1A058D5D00CAB822 /* FAImageView.m in Sources */,
 				F1C12E9C1A0509F700CAB822 /* LoginViewController.m in Sources */,
@@ -717,6 +835,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UniversityBookstore",
+				);
 				INFOPLIST_FILE = UniversityBookstore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -728,6 +850,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UniversityBookstore",
+				);
 				INFOPLIST_FILE = UniversityBookstore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

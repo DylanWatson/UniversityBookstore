@@ -199,10 +199,10 @@
             </objects>
             <point key="canvasLocation" x="-1995" y="-1608"/>
         </scene>
-        <!--View Controller-->
+        <!--Payment View Controller-->
         <scene sceneID="9Wy-yk-y7o">
             <objects>
-                <viewController id="gCD-7g-Rv0" sceneMemberID="viewController">
+                <viewController id="gCD-7g-Rv0" customClass="PaymentViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zCr-7q-amy"/>
                         <viewControllerLayoutGuide type="bottom" id="r6y-rI-etv"/>
@@ -278,6 +278,15 @@
                                 <connections>
                                     <action selector="search:" destination="cVt-UE-54P" eventType="touchDown" id="06B-YO-ulr"/>
                                     <segue destination="FC0-h7-Ctb" kind="show" id="UnB-qo-FVP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPR-Bh-trT">
+                                <rect key="frame" x="168" y="271" width="30" height="30"/>
+                                <state key="normal" title="Test">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gCD-7g-Rv0" kind="show" id="S08-e8-dRT"/>
                                 </connections>
                             </button>
                         </subviews>
