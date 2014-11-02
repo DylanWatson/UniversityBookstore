@@ -180,6 +180,44 @@
             </objects>
             <point key="canvasLocation" x="-351" y="-234"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="d0u-Pi-9gY">
+            <objects>
+                <viewController id="Kcu-Ia-AYb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z1V-N3-xkY"/>
+                        <viewControllerLayoutGuide type="bottom" id="Abg-B5-thz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="96E-S7-qsu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W0M-fS-WuI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1995" y="-1608"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9Wy-yk-y7o">
+            <objects>
+                <viewController id="gCD-7g-Rv0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zCr-7q-amy"/>
+                        <viewControllerLayoutGuide type="bottom" id="r6y-rI-etv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rnS-5V-F0X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DMV-le-k2U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1399" y="-1468"/>
+        </scene>
         <!--Books For Sale Table View Controller-->
         <scene sceneID="LQI-vC-qtf">
             <objects>
@@ -210,7 +248,6 @@
         <!--Buy A Book-->
         <scene sceneID="1Vj-r6-I1S">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pIL-xI-ARM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="cVt-UE-54P" customClass="SearchBooksViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KrD-4M-vO0"/>
@@ -252,6 +289,7 @@
                         <outlet property="searchBar" destination="Fwh-rt-K6G" id="QPE-0P-oGk"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pIL-xI-ARM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-175" y="-1144"/>
         </scene>
