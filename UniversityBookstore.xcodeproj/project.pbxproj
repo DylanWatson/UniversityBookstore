@@ -13,7 +13,6 @@
 		F113A7BE1A04544500D40F7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F113A7BD1A04544500D40F7F /* Images.xcassets */; };
 		F113A7C11A04544500D40F7F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F113A7BF1A04544500D40F7F /* LaunchScreen.xib */; };
 		F113A7CD1A04544500D40F7F /* UniversityBookstoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F113A7CC1A04544500D40F7F /* UniversityBookstoreTests.m */; };
-		F1C12E961A04DD3700CAB822 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E8F1A04DD3700CAB822 /* TPKeyboardAvoidingCollectionView.m */; };
 		F1C12E971A04DD3700CAB822 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E911A04DD3700CAB822 /* TPKeyboardAvoidingScrollView.m */; };
 		F1C12E981A04DD3700CAB822 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E931A04DD3700CAB822 /* TPKeyboardAvoidingTableView.m */; };
 		F1C12E991A04DD3700CAB822 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E951A04DD3700CAB822 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
@@ -63,7 +62,6 @@
 		FC63183F1A05EBBE00CAC693 /* textfield.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6318211A05EBBE00CAC693 /* textfield.png */; };
 		FC6318401A05EBBE00CAC693 /* textfield@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC6318221A05EBBE00CAC693 /* textfield@2x.png */; };
 		FC6318431A05F09700CAC693 /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6318421A05F09700CAC693 /* PaymentViewController.m */; };
-		FC6318461A05F2A300CAC693 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6318451A05F2A300CAC693 /* RegistrationViewController.m */; };
 		FC6318481A05F9CD00CAC693 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6318471A05F9CD00CAC693 /* Parse.framework */; };
 		FC63185A1A05FA2200CAC693 /* PKPayment+STPTestKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = FC63184B1A05FA2200CAC693 /* PKPayment+STPTestKeys.m */; };
 		FC63185B1A05FA2200CAC693 /* STPTestAddressStore.m in Sources */ = {isa = PBXBuildFile; fileRef = FC63184D1A05FA2200CAC693 /* STPTestAddressStore.m */; };
@@ -77,6 +75,15 @@
 		FC63186D1A05FAA800CAC693 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = FC6318681A05FAA700CAC693 /* main.js */; };
 		FC63186E1A05FAA800CAC693 /* global.json in Resources */ = {isa = PBXBuildFile; fileRef = FC63186A1A05FAA700CAC693 /* global.json */; };
 		FC63186F1A05FAA800CAC693 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = FC63186C1A05FAA800CAC693 /* index.html */; };
+		FC6318721A05FB7700CAC693 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6318711A05FB7700CAC693 /* Constants.m */; };
+		FC6318881A06082C00CAC693 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6318871A06082C00CAC693 /* SystemConfiguration.framework */; };
+		FC63188A1A06084200CAC693 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6318891A06084200CAC693 /* QuartzCore.framework */; };
+		FC63188C1A06084D00CAC693 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC63188B1A06084D00CAC693 /* MobileCoreServices.framework */; };
+		FC63188E1A06085500CAC693 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FC63188D1A06085500CAC693 /* libz.dylib */; };
+		FC6318901A06086500CAC693 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC63188F1A06086500CAC693 /* CoreLocation.framework */; };
+		FC6318921A06086E00CAC693 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6318911A06086E00CAC693 /* CFNetwork.framework */; };
+		FC6318941A06087600CAC693 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6318931A06087600CAC693 /* AudioToolbox.framework */; };
+		FC6318961A06087F00CAC693 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6318951A06087F00CAC693 /* UIKit.framework */; };
 		FC96FC041A04B8C0007ED2A9 /* SellBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC96FC031A04B8C0007ED2A9 /* SellBookViewController.m */; };
 		FCC951AC1A05C5460042A575 /* Stripe+ApplePay.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC9519A1A05C5460042A575 /* Stripe+ApplePay.m */; };
 		FCC951AD1A05C5460042A575 /* STPAPIConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC9519C1A05C5460042A575 /* STPAPIConnection.m */; };
@@ -191,8 +198,8 @@
 		FC6318221A05EBBE00CAC693 /* textfield@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textfield@2x.png"; sourceTree = "<group>"; };
 		FC6318411A05F09700CAC693 /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
 		FC6318421A05F09700CAC693 /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
-		FC6318441A05F29300CAC693 /* RegistrationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RegistrationViewController.h; path = ../../../.Trash/RegistrationViewController.h; sourceTree = "<group>"; };
-		FC6318451A05F2A300CAC693 /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegistrationViewController.m; path = ../../../.Trash/RegistrationViewController.m; sourceTree = "<group>"; };
+		FC6318441A05F29300CAC693 /* RegistrationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
+		FC6318451A05F2A300CAC693 /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationViewController.m; sourceTree = "<group>"; };
 		FC6318471A05F9CD00CAC693 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		FC63184A1A05FA2200CAC693 /* PKPayment+STPTestKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PKPayment+STPTestKeys.h"; sourceTree = "<group>"; };
 		FC63184B1A05FA2200CAC693 /* PKPayment+STPTestKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PKPayment+STPTestKeys.m"; sourceTree = "<group>"; };
@@ -215,6 +222,18 @@
 		FC6318681A05FAA700CAC693 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		FC63186A1A05FAA700CAC693 /* global.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = global.json; sourceTree = "<group>"; };
 		FC63186C1A05FAA800CAC693 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		FC6318701A05FB7700CAC693 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		FC6318711A05FB7700CAC693 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		FC6318731A05FEBA00CAC693 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "../../stripe-ios/Example/StripeExample/ViewController.h"; sourceTree = "<group>"; };
+		FC6318741A05FEBA00CAC693 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "../../stripe-ios/Example/StripeExample/ViewController.m"; sourceTree = "<group>"; };
+		FC6318871A06082C00CAC693 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FC6318891A06084200CAC693 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FC63188B1A06084D00CAC693 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		FC63188D1A06085500CAC693 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		FC63188F1A06086500CAC693 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FC6318911A06086E00CAC693 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		FC6318931A06087600CAC693 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FC6318951A06087F00CAC693 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FC96FC021A04B8C0007ED2A9 /* SellBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SellBookViewController.h; sourceTree = "<group>"; };
 		FC96FC031A04B8C0007ED2A9 /* SellBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SellBookViewController.m; sourceTree = "<group>"; };
 		FCC951991A05C5460042A575 /* Stripe+ApplePay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Stripe+ApplePay.h"; sourceTree = "<group>"; };
@@ -249,8 +268,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCC951BA1A05C6A70042A575 /* PassKit.framework in Frameworks */,
+				FC6318961A06087F00CAC693 /* UIKit.framework in Frameworks */,
+				FC6318941A06087600CAC693 /* AudioToolbox.framework in Frameworks */,
+				FC6318921A06086E00CAC693 /* CFNetwork.framework in Frameworks */,
+				FC6318901A06086500CAC693 /* CoreLocation.framework in Frameworks */,
+				FC63188E1A06085500CAC693 /* libz.dylib in Frameworks */,
+				FC63188C1A06084D00CAC693 /* MobileCoreServices.framework in Frameworks */,
+				FC63188A1A06084200CAC693 /* QuartzCore.framework in Frameworks */,
 				FCC951B81A05C68C0042A575 /* Security.framework in Frameworks */,
+				FC6318881A06082C00CAC693 /* SystemConfiguration.framework in Frameworks */,
+				FCC951BA1A05C6A70042A575 /* PassKit.framework in Frameworks */,
 				FCC951B61A05C6740042A575 /* Foundation.framework in Frameworks */,
 				F1C12EB31A05A8B500CAB822 /* CoreGraphics.framework in Frameworks */,
 				FC6318481A05F9CD00CAC693 /* Parse.framework in Frameworks */,
@@ -270,6 +297,14 @@
 		F113A7A41A04544500D40F7F = {
 			isa = PBXGroup;
 			children = (
+				FC6318951A06087F00CAC693 /* UIKit.framework */,
+				FC6318931A06087600CAC693 /* AudioToolbox.framework */,
+				FC6318911A06086E00CAC693 /* CFNetwork.framework */,
+				FC63188F1A06086500CAC693 /* CoreLocation.framework */,
+				FC63188D1A06085500CAC693 /* libz.dylib */,
+				FC63188B1A06084D00CAC693 /* MobileCoreServices.framework */,
+				FC6318891A06084200CAC693 /* QuartzCore.framework */,
+				FC6318871A06082C00CAC693 /* SystemConfiguration.framework */,
 				FC6317F81A05EBBE00CAC693 /* PaymentKit */,
 				FCC951B91A05C6A70042A575 /* PassKit.framework */,
 				FCC951B71A05C68C0042A575 /* Security.framework */,
@@ -303,10 +338,14 @@
 				FC6318441A05F29300CAC693 /* RegistrationViewController.h */,
 				F1C12E9B1A0509F700CAB822 /* LoginViewController.m */,
 				F113A7B41A04544500D40F7F /* AppDelegate.h */,
+				FC6318731A05FEBA00CAC693 /* ViewController.h */,
+				FC6318741A05FEBA00CAC693 /* ViewController.m */,
 				F113A7B51A04544500D40F7F /* AppDelegate.m */,
 				FC96FC021A04B8C0007ED2A9 /* SellBookViewController.h */,
 				FC6318411A05F09700CAC693 /* PaymentViewController.h */,
 				FC6318421A05F09700CAC693 /* PaymentViewController.m */,
+				FC6318701A05FB7700CAC693 /* Constants.h */,
+				FC6318711A05FB7700CAC693 /* Constants.m */,
 				FC6318661A05FAA700CAC693 /* Parse */,
 				FC6318621A05FA7100CAC693 /* MBProgressHUD */,
 				FC6318491A05FA2200CAC693 /* ApplePayStubs */,
@@ -701,7 +740,6 @@
 				F1C12E9F1A052CAD00CAB822 /* RootNavigationController.m in Sources */,
 				FCD33ED91A0566D5002983B3 /* SearchBooksViewController.m in Sources */,
 				FC6318261A05EBBE00CAC693 /* PTKCardExpiry.m in Sources */,
-				FC6318461A05F2A300CAC693 /* RegistrationViewController.m in Sources */,
 				FC63182B1A05EBBE00CAC693 /* PTKView.m in Sources */,
 				F1C12EA21A05434300CAB822 /* InventoryViewController.m in Sources */,
 				F1C12EC41A06008D00CAB822 /* MainViewController.m in Sources */,
@@ -723,13 +761,12 @@
 				F1C12EC71A06110500CAB822 /* ProfileViewController.m in Sources */,
 				FC63185F1A05FA2200CAC693 /* STPTestPaymentSummaryViewController.m in Sources */,
 				FCC951AF1A05C5460042A575 /* STPCard.m in Sources */,
-				F1C12E861A04998000CAB822 /* UploadPicture.m in Sources */,
 				FCC951AC1A05C5460042A575 /* Stripe+ApplePay.m in Sources */,
 				FCC951AD1A05C5460042A575 /* STPAPIConnection.m in Sources */,
 				FC63185E1A05FA2200CAC693 /* STPTestPaymentAuthorizationViewController.m in Sources */,
-				F1C12E961A04DD3700CAB822 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				F1C12EAE1A058D5D00CAB822 /* NSString+FontAwesome.m in Sources */,
 				FC63185B1A05FA2200CAC693 /* STPTestAddressStore.m in Sources */,
+				FC6318721A05FB7700CAC693 /* Constants.m in Sources */,
 				FC6318431A05F09700CAC693 /* PaymentViewController.m in Sources */,
 				F1C12EAD1A058D5D00CAB822 /* FAImageView.m in Sources */,
 				F1C12E9C1A0509F700CAB822 /* LoginViewController.m in Sources */,
@@ -865,6 +902,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/UniversityBookstore",
 				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					STRIPE_ENABLE_APPLEPAY,
+					"DEBUG=1",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = UniversityBookstore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -880,6 +922,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/UniversityBookstore",
 				);
+				GCC_PREPROCESSOR_DEFINITIONS = STRIPE_ENABLE_APPLEPAY;
 				INFOPLIST_FILE = UniversityBookstore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
