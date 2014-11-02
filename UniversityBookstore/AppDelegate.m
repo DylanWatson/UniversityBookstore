@@ -25,7 +25,7 @@ NSString * const StripePublishableKey = @"pk_test_KnOwEabI3f9rSRj0fdqEP3AI";
     [Stripe setDefaultPublishableKey:StripePublishableKey];
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSURL *url = [NSURL URLWithString:@"http://172.26.5.205:3000/is_logged_in"];
+    NSURL *url = [NSURL URLWithString:@"http://10.160.4.209:3000/is_logged_in"];
     NSData *responseData = [NSMutableData data];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     NSString *bodydata = [NSString stringWithFormat:@"email=%@&password=%@&session_id=%@", [defaults objectForKey:@"email"], [defaults objectForKey:@"password"], [defaults objectForKey:@"session_id"]];

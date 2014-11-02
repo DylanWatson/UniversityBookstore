@@ -31,7 +31,7 @@
 
 -(IBAction)signout:(id)sender
 {
-    NSURL *url = [NSURL URLWithString:@"http://172.26.5.205:3000/logout"];
+    NSURL *url = [NSURL URLWithString:@"http://10.160.4.209:3000/logout"];
     NSData *responseData = [NSMutableData data];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
