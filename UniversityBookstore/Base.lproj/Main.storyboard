@@ -244,6 +244,9 @@
                                         <state key="normal" title="Buy Now">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="gCD-7g-Rv0" kind="show" id="PDk-0O-1v8"/>
+                                        </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G4f-D6-cL7">
                                         <rect key="frame" x="21" y="310" width="380" height="200"/>
