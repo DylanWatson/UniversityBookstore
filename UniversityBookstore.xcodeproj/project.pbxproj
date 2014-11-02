@@ -30,6 +30,7 @@
 		F1C12EC11A05FCF500CAB822 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = F1C12EC01A05FCF500CAB822 /* placeholder.png */; };
 		F1C12EC41A06008D00CAB822 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12EC31A06008D00CAB822 /* MainViewController.m */; };
 		F1C12EC71A06110500CAB822 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12EC61A06110500CAB822 /* ProfileViewController.m */; };
+		FC96FBFB1A04B561007ED2A9 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC96FBFA1A04B561007ED2A9 /* RegistrationViewController.m */; };
 		FC6318231A05EBBE00CAC693 /* PTKAddressZip.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6317FA1A05EBBE00CAC693 /* PTKAddressZip.m */; };
 		FC6318241A05EBBE00CAC693 /* PTKCard.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6317FC1A05EBBE00CAC693 /* PTKCard.m */; };
 		FC6318251A05EBBE00CAC693 /* PTKCardCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6317FE1A05EBBE00CAC693 /* PTKCardCVC.m */; };
@@ -153,6 +154,8 @@
 		F1C12EC31A06008D00CAB822 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		F1C12EC51A06110500CAB822 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		F1C12EC61A06110500CAB822 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		FC96FBF91A04B561007ED2A9 /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegistrationViewController.h; path = ../RegistrationViewController.h; sourceTree = "<group>"; };
+		FC96FBFA1A04B561007ED2A9 /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegistrationViewController.m; path = ../RegistrationViewController.m; sourceTree = "<group>"; };
 		FC6317F91A05EBBE00CAC693 /* PTKAddressZip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKAddressZip.h; sourceTree = "<group>"; };
 		FC6317FA1A05EBBE00CAC693 /* PTKAddressZip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKAddressZip.m; sourceTree = "<group>"; };
 		FC6317FB1A05EBBE00CAC693 /* PTKCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKCard.h; sourceTree = "<group>"; };
@@ -753,6 +756,7 @@
 				FC6318611A05FA2200CAC693 /* STPTestShippingMethodStore.m in Sources */,
 				FC63185D1A05FA2200CAC693 /* STPTestDataTableViewController.m in Sources */,
 				F113A7B31A04544500D40F7F /* main.m in Sources */,
+				F1C12E961A04DD3700CAB822 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				F1C12EAE1A058D5D00CAB822 /* NSString+FontAwesome.m in Sources */,
 				F1C12EC71A06110500CAB822 /* ProfileViewController.m in Sources */,
 				FC63185F1A05FA2200CAC693 /* STPTestPaymentSummaryViewController.m in Sources */,
