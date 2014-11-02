@@ -177,7 +177,6 @@
             </objects>
             <point key="canvasLocation" x="-351" y="-234"/>
         </scene>
-<<<<<<< HEAD
         <!--Books Detail View Controller-->
         <scene sceneID="7rX-OB-tvI">
             <objects>
@@ -274,7 +273,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m7H-ok-ap9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1301" y="-1114"/>
-=======
+        </scene>
         <!--View Controller-->
         <scene sceneID="d0u-Pi-9gY">
             <objects>
@@ -312,7 +311,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DMV-le-k2U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1399" y="-1468"/>
->>>>>>> b1aaa6913ee71e8e92ebcc359c1d46a1258f8ebf
         </scene>
         <!--Books For Sale Table View Controller-->
         <scene sceneID="LQI-vC-qtf">

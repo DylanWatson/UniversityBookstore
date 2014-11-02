@@ -13,7 +13,6 @@
 		F113A7BE1A04544500D40F7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F113A7BD1A04544500D40F7F /* Images.xcassets */; };
 		F113A7C11A04544500D40F7F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F113A7BF1A04544500D40F7F /* LaunchScreen.xib */; };
 		F113A7CD1A04544500D40F7F /* UniversityBookstoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F113A7CC1A04544500D40F7F /* UniversityBookstoreTests.m */; };
-		F1C12E961A04DD3700CAB822 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E8F1A04DD3700CAB822 /* TPKeyboardAvoidingCollectionView.m */; };
 		F1C12E971A04DD3700CAB822 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E911A04DD3700CAB822 /* TPKeyboardAvoidingScrollView.m */; };
 		F1C12E981A04DD3700CAB822 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E931A04DD3700CAB822 /* TPKeyboardAvoidingTableView.m */; };
 		F1C12E991A04DD3700CAB822 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12E951A04DD3700CAB822 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
@@ -754,7 +753,6 @@
 				FC6318611A05FA2200CAC693 /* STPTestShippingMethodStore.m in Sources */,
 				FC63185D1A05FA2200CAC693 /* STPTestDataTableViewController.m in Sources */,
 				F113A7B31A04544500D40F7F /* main.m in Sources */,
-				F1C12E961A04DD3700CAB822 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				F1C12EAE1A058D5D00CAB822 /* NSString+FontAwesome.m in Sources */,
 				F1C12EC71A06110500CAB822 /* ProfileViewController.m in Sources */,
 				FC63185F1A05FA2200CAC693 /* STPTestPaymentSummaryViewController.m in Sources */,
@@ -762,7 +760,6 @@
 				FCC951AC1A05C5460042A575 /* Stripe+ApplePay.m in Sources */,
 				FCC951AD1A05C5460042A575 /* STPAPIConnection.m in Sources */,
 				FC63185E1A05FA2200CAC693 /* STPTestPaymentAuthorizationViewController.m in Sources */,
-				F1C12E961A04DD3700CAB822 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				F1C12EAE1A058D5D00CAB822 /* NSString+FontAwesome.m in Sources */,
 				FC63185B1A05FA2200CAC693 /* STPTestAddressStore.m in Sources */,
 				FC6318721A05FB7700CAC693 /* Constants.m in Sources */,
