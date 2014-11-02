@@ -40,11 +40,6 @@
 }
 
 -(BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
-    if(textField == category)
-    {
-        [textField resignFirstResponder];
-        return NO;
-    }
     return YES;
 }
 

@@ -12,6 +12,7 @@
 #import "PTKView.h"
 #import <Parse/Parse.h>
 #import "Constants.h"
+#import "RootNavigationController.h"
 
 @interface PaymentViewController ()<PTKViewDelegate>
 @property(weak, nonatomic) PTKView *paymentView;
@@ -49,7 +50,12 @@
 }
 
 - (void)cancel:(id)sender {
-    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+    
+    UINavigationController *controller = (UINavigationController*)[mainStoryboard instantiateViewControllerWithIdentifier: @"RootNavigationController"];
+    
+    RootNavigationController *navController = (RootNavigationController *)controller;
+    [self presentViewController:navController animated:YES completion:nil];
 }
 
 - (IBAction)save:(id)sender {

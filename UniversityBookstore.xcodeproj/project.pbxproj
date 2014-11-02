@@ -31,7 +31,7 @@
 		F1C12ECB1A062A2400CAB822 /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1C12ECA1A062A2400CAB822 /* placeholder.jpg */; };
 		F1C12ECC1A062F6100CAB822 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6318451A05F2A300CAC693 /* RegistrationViewController.m */; };
 		F1C12ECF1A0632A100CAB822 /* InventoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12ECE1A0632A100CAB822 /* InventoryTableViewController.m */; };
-		F1C12ED21A063EB400CAB822 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = F1C12ED11A063EB400CAB822 /* NSData+Base64.m */; };
+		F1C12ED41A0643BA00CAB822 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F1C12ED31A0643BA00CAB822 /* AppIcon.png */; };
 		FC6318231A05EBBE00CAC693 /* PTKAddressZip.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6317FA1A05EBBE00CAC693 /* PTKAddressZip.m */; };
 		FC6318241A05EBBE00CAC693 /* PTKCard.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6317FC1A05EBBE00CAC693 /* PTKCard.m */; };
 		FC6318251A05EBBE00CAC693 /* PTKCardCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FC6317FE1A05EBBE00CAC693 /* PTKCardCVC.m */; };
@@ -154,8 +154,7 @@
 		F1C12ECA1A062A2400CAB822 /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpg; sourceTree = "<group>"; };
 		F1C12ECD1A0632A100CAB822 /* InventoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventoryTableViewController.h; sourceTree = "<group>"; };
 		F1C12ECE1A0632A100CAB822 /* InventoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventoryTableViewController.m; sourceTree = "<group>"; };
-		F1C12ED01A063EB400CAB822 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
-		F1C12ED11A063EB400CAB822 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		F1C12ED31A0643BA00CAB822 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
 		FC6317F91A05EBBE00CAC693 /* PTKAddressZip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKAddressZip.h; sourceTree = "<group>"; };
 		FC6317FA1A05EBBE00CAC693 /* PTKAddressZip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTKAddressZip.m; sourceTree = "<group>"; };
 		FC6317FB1A05EBBE00CAC693 /* PTKCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKCard.h; sourceTree = "<group>"; };
@@ -340,8 +339,6 @@
 				FC6318421A05F09700CAC693 /* PaymentViewController.m */,
 				FC6318701A05FB7700CAC693 /* Constants.h */,
 				FC6318711A05FB7700CAC693 /* Constants.m */,
-				F1C12ED01A063EB400CAB822 /* NSData+Base64.h */,
-				F1C12ED11A063EB400CAB822 /* NSData+Base64.m */,
 				FC6318661A05FAA700CAC693 /* Parse */,
 				FC6318621A05FA7100CAC693 /* MBProgressHUD */,
 				FC6318491A05FA2200CAC693 /* ApplePayStubs */,
@@ -355,6 +352,7 @@
 				F1C12ECD1A0632A100CAB822 /* InventoryTableViewController.h */,
 				F1C12ECE1A0632A100CAB822 /* InventoryTableViewController.m */,
 				F113A7BD1A04544500D40F7F /* Images.xcassets */,
+				F1C12ED31A0643BA00CAB822 /* AppIcon.png */,
 				F113A7BF1A04544500D40F7F /* LaunchScreen.xib */,
 				F113A7B01A04544500D40F7F /* Supporting Files */,
 				F1C12E9D1A052CAD00CAB822 /* RootNavigationController.h */,
@@ -688,6 +686,7 @@
 				FC6318391A05EBBE00CAC693 /* mastercard@2x.png in Resources */,
 				FC6318371A05EBBE00CAC693 /* jcb@2x.png in Resources */,
 				FC6318601A05FA2200CAC693 /* STPTestPaymentSummaryViewController.xib in Resources */,
+				F1C12ED41A0643BA00CAB822 /* AppIcon.png in Resources */,
 				FC6318381A05EBBE00CAC693 /* mastercard.png in Resources */,
 				FC63183D1A05EBBE00CAC693 /* visa@2x.png in Resources */,
 				FC6318361A05EBBE00CAC693 /* jcb.png in Resources */,
@@ -748,7 +747,6 @@
 				FC6318271A05EBBE00CAC693 /* PTKCardNumber.m in Sources */,
 				FC6318611A05FA2200CAC693 /* STPTestShippingMethodStore.m in Sources */,
 				FC63185D1A05FA2200CAC693 /* STPTestDataTableViewController.m in Sources */,
-				F1C12ED21A063EB400CAB822 /* NSData+Base64.m in Sources */,
 				F113A7B31A04544500D40F7F /* main.m in Sources */,
 				F1C12EAE1A058D5D00CAB822 /* NSString+FontAwesome.m in Sources */,
 				F1C12EC71A06110500CAB822 /* ProfileViewController.m in Sources */,

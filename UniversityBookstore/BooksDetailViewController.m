@@ -7,7 +7,7 @@
 //
 
 #import "BooksDetailViewController.h"
-#import "NSData+Base64.h"
+#import "PaymentViewController.h"
 
 @interface BooksDetailViewController ()
 
@@ -21,11 +21,12 @@
     _book_title.text = [_dictionary objectForKey:@"title"];
     _price.text = [_dictionary objectForKey:@"price"];
     _description.text = [_dictionary objectForKey:@"description"];
+    [_description setFont:[UIFont systemFontOfSize:16]];
     _category.text = [_dictionary objectForKey:@"category"];
     _isbn.text = [_dictionary objectForKey:@"isbn"];
     
     //Creating the data from your base64String
-    NSData *data = [[NSData alloc] initWithData:[NSData dataFromBase64String:[_dictionary objectForKey:@"image"]]];
+    NSData *data = [[NSData alloc] initWithBase64EncodedString:[_dictionary objectForKey:@"image"] options:0];
     
     //Now data is decoded. You can convert them to UIImage
     UIImage *image = [UIImage imageWithData:data];
