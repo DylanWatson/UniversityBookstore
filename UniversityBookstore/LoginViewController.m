@@ -64,6 +64,13 @@
         RootNavigationController *navController = (RootNavigationController *)controller;
         [self presentViewController:navController animated:YES completion:nil];
     }
+    else
+    {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Invalid Credentials" message:@"Check your credentials and try again" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *close = [UIAlertAction actionWithTitle:@"Close" style:UIAlertActionStyleDefault handler:nil];
+        [alert addAction:close];
+        [self presentViewController:alert animated:YES completion:nil];
+    }
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
